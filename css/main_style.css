@@ -1,0 +1,1461 @@
+@font-face {
+    font-family: 'Champagne-Limousines-Bold';
+    src: url('https://www.godrejproperties.com/backoffice/data_content/projects/godrej_exquisite_mumbai/landing_page/fonts/Champagne-Limousines-Bold.eot') format('eot'),
+         url('https://www.godrejproperties.com/backoffice/data_content/projects/godrej_exquisite_mumbai/landing_page/fonts/Champagne-Limousines-Bold.svg') format('svg'),
+         url('https://www.godrejproperties.com/backoffice/data_content/projects/godrej_exquisite_mumbai/landing_page/fonts/Champagne-Limousines-Bold.ttf') format('ttf'),
+         url('https://www.godrejproperties.com/backoffice/data_content/projects/godrej_exquisite_mumbai/landing_page/fonts/Champagne-Limousines-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Helvetica-cebold';
+    src: url('https://www.godrejproperties.com/backoffice/data_content/projects/godrej_exquisite_mumbai/landing_page/fonts/helvetica_ce_bold.woff2') format('woff2'),
+         url('https://www.godrejproperties.com/backoffice/data_content/projects/godrej_exquisite_mumbai/landing_page/fonts/helvetica_ce_bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'HelveticaNeueLTStd-Lt';
+    src: url('https://www.godrejproperties.com/backoffice/data_content/projects/godrej_exquisite_mumbai/landing_page/fonts/HelveticaNeueLTStd-Lt.eot') format('eot'),
+         url('https://www.godrejproperties.com/backoffice/data_content/projects/godrej_exquisite_mumbai/landing_page/fonts/HelveticaNeueLTStd-Lt.otf') format('otf'),
+         url('https://www.godrejproperties.com/backoffice/data_content/projects/godrej_exquisite_mumbai/landing_page/fonts/HelveticaNeueLTStd-Lt.svg') format('svg'),
+         url('https://www.godrejproperties.com/backoffice/data_content/projects/godrej_exquisite_mumbai/landing_page/fonts/HelveticaNeueLTStd-Lt.ttf') format('ttf'),
+         url('https://www.godrejproperties.com/backoffice/data_content/projects/godrej_exquisite_mumbai/landing_page/fonts/HelveticaNeueLTStd-Lt.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'RageItalic';
+    src: url('https://www.godrejproperties.com/backoffice/data_content/projects/godrej_exquisite_mumbai/landing_page/fonts/RageItalic.eot') format('eot'),
+         url('https://www.godrejproperties.com/backoffice/data_content/projects/godrej_exquisite_mumbai/landing_page/fonts/RageItalic.svg') format('svg'),
+         url('https://www.godrejproperties.com/backoffice/data_content/projects/godrej_exquisite_mumbai/landing_page/fonts/RageItalic.ttf') format('ttf'),
+         url('https://www.godrejproperties.com/backoffice/data_content/projects/godrej_exquisite_mumbai/landing_page/fonts/RageItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Helvetica-Regular';
+    src: url('https://www.godrejproperties.com/backoffice/data_content/projects/godrej_exquisite_mumbai/landing_page/fonts/Helvetica-Regular.eot') format('eot'),
+         url('https://www.godrejproperties.com/backoffice/data_content/projects/godrej_exquisite_mumbai/landing_page/fonts/Helvetica-Regular.otf') format('otf'),
+         url('https://www.godrejproperties.com/backoffice/data_content/projects/godrej_exquisite_mumbai/landing_page/fonts/Helvetica-Regular.ttf') format('ttf'),
+         url('https://www.godrejproperties.com/backoffice/data_content/projects/godrej_exquisite_mumbai/landing_page/fonts/Helvetica-Regular.woff') format('woff'),
+         url('https://www.godrejproperties.com/backoffice/data_content/projects/godrej_exquisite_mumbai/landing_page/fonts/Helvetica-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal; 
+
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+  /*list-style-image: url(data:0);*/
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+}
+strong {
+  font-weight: bold;
+}
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Champagne-Limousines-Bold';
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: normal;
+}
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+/*.section {
+  padding: 50px 0;
+}*/
+
+h1, h2, h3, h4 {
+  font-family: "Champagne-Limousines-Bold";
+}
+h2 {
+  font-size: 42px;
+  line-height: 50px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 20px;
+  line-height: 24px;
+  padding-bottom: 10px;
+}
+/*.anchorLink .section{
+  transform: scale(.7);
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+.anchorLink .section.active{
+  transform: scale(1);
+}*/
+
+.sec_loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  z-index: 100;
+}
+/*.section_load {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.section_load h1{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 5em;
+    font-family:"RageItalic";
+    text-transform: uppercase;
+}
+.section_load h1 span{
+    display: inline-block;
+    animation: animate 1s linear forwards;
+}
+@keyframes animate{
+    0%{
+        opacity: 0;
+        transform: rotateY(90deg);
+        filter: blur(10px)
+    }
+    100%{
+        opacity: 1;
+        transform: rotateY(0deg);
+        filter:blur(0)
+    }
+}
+.section_load h1 span:nth-child(1){
+    color:#56c9f4;
+    opacity: 0;
+    animation-delay: 2s;
+}
+.section_load h1 span:nth-child(2){
+    opacity: 0;
+    animation-delay: 2.5s;
+}
+.section_load h1 span:nth-child(3){
+    opacity: 0;
+    animation-delay: 2.75s;
+}
+.section_load h1 span:nth-child(4){
+    opacity: 0;
+    animation-delay: 3s;
+}
+.section_load h1 span:nth-child(5){
+    color:#56c9f4;
+    opacity: 0;
+    animation-delay: 3.5s;
+}
+.section_load h1 span:nth-child(6){
+    opacity: 0;
+    animation-delay: 3.75s;
+}
+.section_load h1 span:nth-child(7){
+    opacity: 0;
+    animation-delay: 4s;
+}
+*/
+.section2_load {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 40%;
+  margin: 0 auto;
+}
+.section2_load .svg_path {
+  opacity: 0;
+  stroke: #fff;
+  animation: visible_svgfill .5s linear forwards;
+  animation-delay: 0s, 2.3s;
+  /*animation: visible_svg .5s linear forwards*/
+}
+.section2_load .svg_path:nth-child(1) {
+  animation-delay: 0s, .6s;
+}
+.section2_load .svg_path:nth-child(2) {
+  animation-delay:.6s;
+}
+.section2_load .svg_path:nth-child(3) {
+  animation-delay:.7s;
+}
+.section2_load .svg_path:nth-child(4) {
+  animation-delay:.8s;
+}
+.section2_load .svg_path:nth-child(5) {
+  animation-delay:.9s;
+}
+.section2_load .svg_path:nth-child(6) {
+  animation-delay:1s;
+}
+.section2_load .svg_path:nth-child(7) {
+  animation-delay:1.1s;
+}
+.section2_load .svg_path:nth-child(8) {
+  animation-delay:1.2s;
+}
+.section2_load .svg_path:nth-child(9) {
+  animation-delay:1.3s;
+}
+.section2_load .svg_path:nth-child(10) {
+  animation-delay:1.4s;
+}
+.section2_load .svg_path:nth-child(11) {
+  animation-delay:1.5s;
+}
+.section2_load .svg_path:nth-child(12) {
+  animation-delay:1.6s;
+}
+.section2_load .svg_path:nth-child(13) {
+  animation-delay: 1.7s;
+}
+.section2_load .svg_path:nth-child(14) {
+  animation-delay: 1.8s;
+}
+.section2_load .svg_path:nth-child(15) {
+  animation-delay:1.9s;
+}
+.section2_load .svg_path:nth-child(16) {
+  animation-delay:2s;
+}
+.section2_load .svg_path:nth-child(17) {
+  animation-delay:2.1s;
+}
+.section2_load .svg_path:nth-child(18) {
+  animation-delay:2.2s;
+}
+
+/*@keyframes visible_svg {
+  0%{
+    stroke-dasharray: 0 400;
+  }
+  100%{
+    opacity: 1;
+    stroke-dasharray: 400 400;
+  }
+}*/
+@keyframes visible_svgfill {
+  0%{
+    fill: none;
+  }
+  100%{
+    opacity: 1;
+    fill: #fff;
+  }
+}
+
+
+/************ Header style start ***********/
+#site_header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+#site_header .container {
+  width: 96%;
+  max-width: none;
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand_logo {
+    max-width: 250px;
+    width: 100%;
+    margin: 0;
+}
+.project_logo {
+    max-width: 181px;
+    width: 100%;
+    margin: 0;
+}
+
+/************ Navigation style start ***********/
+.menu_burger {
+  display: none;
+}
+.open_menu {
+  display: block;
+}
+.close_menu {
+  display: none;
+}
+#site_nav {
+  position: fixed;
+  left: 2%;
+  top: 0;
+  height: 100%;
+  max-width: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  z-index: -1;
+}
+#menu {
+  width: 100%;
+}
+#menu li a {
+  font-family: "Champagne-Limousines-Bold";
+  display: block;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px 5px;
+  position: relative;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+/*#menu li a:hover, #menu li a.active, #menu li.submenu_head.active_subnav > a {
+  font-family: "Champagne-Limousines-Bold";
+  font-size: 20px;
+  color: #56c9f4; 
+}*/
+
+#menu li a:hover, #menu li a.active {
+  font-family: "Champagne-Limousines-Bold";
+  font-size: 20px;
+  color: #56c9f4; 
+}
+
+#menu li a:after {
+  content: "";
+  border-bottom: 1px solid #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;  
+}
+#menu li:last-child a:after {
+  display: none;
+}
+
+/*#menu li.submenu_head > a:before {
+  content: "+";
+  font-size: 30px;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+}
+#menu li.submenu_head.active_subnav > a:before {
+  content: "-";
+  color: #56c9f4;
+  font-size: 50px;
+}
+#menu li.submenu_head #submenu {
+  display: none;
+}
+#submenu li a {
+  font-size: 14px;
+  line-height: 18px;
+}
+#submenu li a:hover, #submenu li a.active {
+  font-family: "Champagne-Limousines-Bold";
+  font-size: 18px;
+  color: #56c9f4; 
+}*/ 
+/************ Main banner style start ***********/
+#home-wrp {
+}
+.main_slide.owl-carousel {
+  height: 100%;
+  width: 100%;
+}
+
+.main_slide .item {
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+.main_slide .item.slide_01 {
+  background-image: url(../images/main_slide_01.jpg);
+}
+.main_slide .item.slide_02 {
+  background-image: url(../images/main_slide_02.jpg);
+}
+.main_slide .item.slide_03 {
+  background-image: url(../images/main_slide_03.jpg);
+}
+.main_slide .item.slide_04 {
+  background-image: url(../images/main_slide_04.jpg);
+}
+.main_slide .container.banner_txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  padding-top: 5%;
+  opacity: 0;
+}
+.section.active .main_slide .container.banner_txt {
+  /*animation: visible_txt 3s linear forwards;*/
+  opacity: 1;
+}
+
+@keyframes visible_txt {
+  0%{
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.banner_head {
+  font-family: 'Champagne-Limousines-Bold';
+  color: #fff;
+  font-size: 50px;
+  line-height: 55px;
+  text-transform: none;
+  text-shadow: 0 0 2px #000;
+  background-color: rgba(0,0,0,0.3);
+  padding: 10px 0;
+  max-width: 380px;
+  width: 100%;
+}
+.banner_head .linebr {
+  display: block;
+  color: #fff;
+    font-size: 18px;
+    line-height: 22px;
+  padding: 10px 0;
+}
+.banner_head .linebr > span {
+  display: block;
+  padding: 10px 0;
+  position: relative;
+
+}
+.banner_head .linebr > span:last-child {
+  padding-top: 20px;
+}
+.banner_head .linebr > span:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 60%;
+  margin: 0 auto;
+  height: 1px;
+  background-color: #fff;
+}
+.banner_head .linebr > span:last-child:after {
+  display: none;
+}
+.banner_para {
+  font-family: 'RageItalic';
+  display: block;
+  font-size: 40px;
+  line-height: 30px;
+  color: #fff;
+  text-transform: none;
+  text-shadow: 0 0 2px #000;
+  background-color: rgba(0,0,0,0.3);
+  padding: 10px 0 20px;
+  max-width: 380px;
+  width: 100%;
+}
+#clock {
+  text-transform: lowercase;
+}
+/************ Overview style start ***********/
+#overview-wrp {
+}
+.overview_bg {
+  background: url(../images/overview_bg.jpg) no-repeat center top;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#overview-wrp .container {
+  /*display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;*/
+  height: 100%;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  padding-top: 80px;
+  width: 62%;
+}
+#overview-wrp.section.active .container {
+  /*animation: visible_txt 3s linear forwards;*/
+  opacity: 1;
+}
+
+#overview-wrp .container p {
+  font-family: "Champagne-Limousines-Bold";
+}
+#overview-wrp .container p:last-child {
+  font-family: "RageItalic";
+  font-size: 30px;
+  letter-spacing: 1px;
+}
+/************ Project highlights style start ***********/
+
+#highlights-wrp {
+}
+.highlights_slider {
+
+}
+.highlights_slider .item {
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+.highlights_slider .item.slide_01 {
+  background-image: url(../images/highlights_slide_01.html);  
+}
+.highlights_slider .item.slide_02 {
+  background-image: url(../images/highlights_slide_02.html);  
+}
+.highlights_slider .item.slide_03 {
+  background-image: url(../images/highlights_slide_03.html);  
+}
+.highlights_slider .item.slide_04 {
+  background-image: url(../images/highlights_slide_01.html);  
+}
+.highlights_slider .item.slide_05 {
+  background-image: url(../images/highlights_slide_02.html);  
+}
+.highlights_slider .item.slide_06 {
+  background-image: url(../images/highlights_slide_03.html);  
+}
+.highlights_slider .item.slide_07 {
+  background-image: url(../images/highlights_slide_01.html);  
+}
+.highlights_slider .container.banner_txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  padding-bottom: 5%;
+  color: #fff;
+  opacity: 0;
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+.section.active .highlights_slider .container.banner_txt {
+  animation: visible_txt 3s linear forwards;
+}
+opacity: 1;
+.highlights_slider.owl-theme .owl-dots {
+  position: absolute;
+  right: 2%;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+}
+.highlights_slider.owl-theme .owl-dots .owl-dot {
+  outline: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.highlights_slider.owl-theme .owl-dots .owl-dot button {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 12px;
+  line-height: 15px; 
+  text-transform: uppercase; 
+  margin: 15px 0;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  outline: none;
+  font-family: "Champagne-Limousines-Bold";
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 4px;
+}
+.highlights_slider.owl-theme .owl-dots .owl-dot.active button, 
+.highlights_slider.owl-theme .owl-dots .owl-dot:hover button {
+  color: #56c9f4; 
+}
+.highlights_slider.owl-theme .owl-dots .owl-dot button:before,
+.highlights_slider.owl-theme .owl-dots .owl-dot button:after {
+  content: "";
+  position: absolute;
+  right: 10px;
+  width: 2px;
+  height: 120%;
+  background-color: #fff;
+  z-index: -1;
+}
+.highlights_slider.owl-theme .owl-dots .owl-dot button:before{
+  top: 80%;
+}
+.highlights_slider.owl-theme .owl-dots .owl-dot button:after {
+  top: -80%;
+}
+.highlights_slider.owl-theme .owl-dots .owl-dot span {
+  background: #fff;
+  margin: 0 0 0 15px;
+}
+.highlights_slider.owl-theme .owl-dots .owl-dot.active span, 
+.highlights_slider.owl-theme .owl-dots .owl-dot:hover span {
+  background: #56c9f4;
+}
+
+/************ Project amenities style start ***********/
+#podiumamenities-wrp {
+  padding: 0;
+}
+#exclusiveamenities-wrp {
+  padding: 0;
+}
+.exclusiveamenities_slider {
+
+}
+.exclusiveamenities_slider .item {
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+
+.exclusiveamenities_slider .item.slide_01 {
+  background-image: url(../images/exclusiveamenities_slide_01.jpg);  
+}
+.exclusiveamenities_slider .item.slide_02 {
+  background-image: url(../images/exclusiveamenities_slide_02.jpg);  
+}
+.exclusiveamenities_slider .item.slide_03 {
+  background-image: url(../images/exclusiveamenities_slide_03.jpg);  
+}
+.exclusiveamenities_slider .item.slide_04 {
+  background-image: url(../images/exclusiveamenities_slide_04.jpg);  
+}
+.exclusiveamenities_slider .item.slide_05 {
+  background-image: url(../images/exclusiveamenities_slide_05.jpg);  
+}
+.exclusiveamenities_slider .item.slide_06 {
+  background-image: url(../images/exclusiveamenities_slide_06.jpg);  
+}
+
+
+.podiumamenities_slider {
+
+}
+.podiumamenities_slider .item {
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+
+.podiumamenities_slider .item.slide_01 {
+  background-image: url(../images/podiumamenities_slide_01.jpg);  
+}
+.podiumamenities_slider .item.slide_02 {
+  background-image: url(../images/podiumamenities_slide_02.jpg);  
+}
+.podiumamenities_slider .item.slide_03 {
+  background-image: url(../images/podiumamenities_slide_03.jpg);  
+}
+.podiumamenities_slider .item.slide_04 {
+  background-image: url(../images/podiumamenities_slide_04.jpg);  
+}
+.podiumamenities_slider .item.slide_05 {
+  background-image: url(../images/podiumamenities_slide_05.jpg);  
+}
+
+
+
+.exclusiveamenities_slider .container.banner_txt, 
+.podiumamenities_slider .container.banner_txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  padding-bottom: 5%;
+  color: #fff;
+  opacity: 0;
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+.section.active .exclusiveamenities_slider .container.banner_txt,
+.section.active .podiumamenities_slider .container.banner_txt {
+  /*animation: visible_txt 3s linear forwards;*/
+  opacity: 1;
+}
+.exclusiveamenities_slider.owl-theme .owl-dots, 
+.podiumamenities_slider.owl-theme .owl-dots {
+  position: absolute;
+  right: 2%;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+}
+.exclusiveamenities_slider.owl-theme .owl-dots .owl-dot, 
+.podiumamenities_slider.owl-theme .owl-dots .owl-dot {
+  outline: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.exclusiveamenities_slider.owl-theme .owl-dots .owl-dot button, 
+.podiumamenities_slider.owl-theme .owl-dots .owl-dot button {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 12px;
+  line-height: 15px; 
+  text-transform: uppercase; 
+  margin: 15px 0;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  outline: none;
+  font-family: "Champagne-Limousines-Bold";
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 4px;
+}
+.exclusiveamenities_slider.owl-theme .owl-dots .owl-dot.active button, 
+.exclusiveamenities_slider.owl-theme .owl-dots .owl-dot:hover button,
+.podiumamenities_slider.owl-theme .owl-dots .owl-dot.active button, 
+.podiumamenities_slider.owl-theme .owl-dots .owl-dot:hover button {
+  color: #56c9f4; 
+}
+.exclusiveamenities_slider.owl-theme .owl-dots .owl-dot button:before,
+.exclusiveamenities_slider.owl-theme .owl-dots .owl-dot button:after,
+.podiumamenities_slider.owl-theme .owl-dots .owl-dot button:before,
+.podiumamenities_slider.owl-theme .owl-dots .owl-dot button:after {
+  content: "";
+  position: absolute;
+  right: 10px;
+  width: 2px;
+  height: 120%;
+  background-color: #fff;
+  z-index: -1;
+}
+.exclusiveamenities_slider.owl-theme .owl-dots .owl-dot button:before,
+.podiumamenities_slider.owl-theme .owl-dots .owl-dot button:before{
+  top: 80%;
+}
+.exclusiveamenities_slider.owl-theme .owl-dots .owl-dot button:after,
+.podiumamenities_slider.owl-theme .owl-dots .owl-dot button:after {
+  top: -80%;
+}
+.exclusiveamenities_slider.owl-theme .owl-dots .owl-dot span,
+.podiumamenities_slider.owl-theme .owl-dots .owl-dot span {
+  background: #fff;
+  margin: 0 0 0 15px;
+}
+.exclusiveamenities_slider.owl-theme .owl-dots .owl-dot.active span, 
+.exclusiveamenities_slider.owl-theme .owl-dots .owl-dot:hover span, 
+.podiumamenities_slider.owl-theme .owl-dots .owl-dot.active span, 
+.podiumamenities_slider.owl-theme .owl-dots .owl-dot:hover span {
+  background: #56c9f4;
+}
+/************ Project Gallery style start ***********/
+#gallery-wrp {
+}
+.gallery_slider {
+
+}
+.gallery_slider .item {
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+/*.gallery_slider .item.slide_01 {
+  background-image: url(../images/gallery_slide_01.jpg);  
+}
+.gallery_slider .item.slide_02 {
+  background-image: url(../images/gallery_slide_02.jpg);  
+}
+.gallery_slider .item.slide_03 {
+  background-image: url(../images/gallery_slide_03.jpg);  
+}
+.gallery_slider .item.slide_04 {
+  background-image: url(../images/gallery_slide_04.jpg);  
+}
+.gallery_slider .item.slide_05 {
+  background-image: url(../images/gallery_slide_05.jpg);  
+}
+.gallery_slider .item.slide_06 {
+  background-image: url(../images/gallery_slide_06.jpg);  
+}*/
+.video_head {
+  position: absolute;
+  bottom: 20%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  color: #000;
+  font-size: 20px;
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+  background-color: rgba(255,255,255,0.5);
+  padding: 10px;
+  border-radius: 5px;
+}
+.video_img_01 {
+  background-image: url(../images/video-img-01.jpg);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+.video_img_02 {
+  background-image: url(../images/video-img-02.jpg);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+.slider-counter {
+    font-family: "Champagne-Limousines-Bold";
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+    z-index: 1;
+    color: #fff;
+    font-size: 50px;
+    line-height: 55px;
+}
+.slider-counter span {
+  display: inline-block;
+}
+.slider-counter span:first-child {
+  font-size: 90px;
+  line-height: 95px;
+  display: inline-block;
+}
+.gallery_slider.owl-theme .owl-nav {
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+}
+.gallery_slider.owl-carousel .owl-nav button.owl-next, 
+.gallery_slider.owl-carousel .owl-nav button.owl-prev,
+.gallery_slider.owl-carousel .owl-nav button.owl-next:hover, 
+.gallery_slider.owl-carousel .owl-nav button.owl-prev:hover {
+  font-size: 0;
+  background: transparent;
+  color: #fff;
+  padding: 0;
+  margin: 5px 0;
+  position: relative;
+  outline: none;
+}
+.gallery_slider.owl-carousel .owl-nav button.owl-prev:before {
+  content: "\f177";
+  font-family: "FontAwesome";
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 30px;
+  color: #fff;
+}
+.gallery_slider.owl-carousel .owl-nav button.owl-next:before {
+  content: "\f178";
+  font-family: "FontAwesome";
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 30px;
+  color: #fff;
+}
+/************ Locaton style start ***********/
+#locaton-wrp {
+}
+.locaton_bg {
+  background: url(../images/locaton_bg.jpg) no-repeat center top;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.locaton_bg iframe {
+  width: 100%;
+  height: 100%;
+}
+#locaton-wrp .container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+  padding-bottom: 80px;
+}
+.location_link {
+  text-align: center;
+  color: #000;
+  background-color: #fff;
+  border-radius: 5px;
+  text-align: center;
+  padding: 10px 15px;
+}
+.location_link a {
+  color: #000;
+  font-size: 20px;
+  line-height: 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+  position: relative;
+}
+
+/************ Address and disclaimer style start ***********/
+#contact-wrp {
+  background-color: #000;
+  padding: 20px 0 100px;
+}
+#contact-wrp .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.disc_txt {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+}
+.disc_txt h2 {
+  font-size: 30px;
+  line-height: 39px;
+}
+.disc_txt p {
+  border-bottom: 2px solid #fff;
+  margin-bottom: 10px;
+}
+.disc_txt p:last-child {
+  border-bottom: none;
+}
+
+/*Enquire now style*/
+#fixed_form_wrap {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+}
+.form_container {
+  background-color: rgba(255,255,255,0.3);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px;
+    padding: 5px 0;
+    max-width: none;
+    width: 90%;
+}
+.form_close {
+  display: none;
+}
+.site_heading5 {
+  font-family: 'Champagne-Limousines-Bold';
+  font-size: 24px;
+  line-height: 28px;
+  color: #fff;
+}
+#frmContactus {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+}
+.fieldwrapper {
+    width: 25%;
+    margin: 0 10px;
+}
+
+.fieldwrapper input, .fieldwrapper select {
+  font-family: 'Champagne-Limousines-Bold';
+  width: 90%;
+  border: 1px solid #fff;
+  background-color: #fff;
+  border-radius: 5px;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 1px;
+  color: #000;
+  height: 40px;
+  padding: 0 0 0 20px;
+  outline: 0;
+}
+
+.fieldwrapper select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: url(../images/arrow-down.png) 96% center no-repeat #fff;
+    outline: 0;
+    padding-right: 0;
+    width: 100%;
+}
+.fieldwrapper.form-cta-btn {
+    text-align: center;
+    font-family: 'Champagne-Limousines-Bold';
+    padding: 0;
+    margin: 0 5px 0 5px;
+    border: none;
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    font-size: 18px;
+    max-width: 120px;
+    border-radius: 5px;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fieldwrapper.form-cta-btn a {
+    color: #000;
+    text-decoration: none;
+    position: relative;
+}
+/*.fieldwrapper.form-cta-btn a:after {
+  content: "\f178";
+  font-family: 'FontAwesome';
+  color: #000;
+  margin-left: 10px;
+}*/
+
+.fieldwrapper > input[type=number]::-webkit-inner-spin-button, 
+.fieldwrapper > input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+::-webkit-input-placeholder { /* Chrome */
+  color: #000;
+  opacity: 1;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #000;
+  opacity: 1;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #000;
+  opacity: 1;
+}
+:-moz-placeholder { /* Firefox 4 - 18 */
+  color: #000;
+  opacity: 1;
+}
+
+.mobi_form_btn {
+  display: none;
+}
+
+
+
+
+@media only screen and (max-width: 1023px) {
+  .section2_load {
+    width: 90%;
+  }
+  h2 {
+      font-size: 24px;
+      line-height: 35px;
+      padding-bottom: 5px;
+  }
+  p {
+      font-size: 16px;
+      line-height: 20px;
+  }
+  /*header style*/
+  #site_header {
+    background-color: rgba(0,0,0,0.5);
+  }
+  #site_header .container {
+        padding: 5px 0;
+  }
+  .brand_logo, .project_logo {
+      width: 40%;
+  }
+  #site_nav {
+    background-color: rgba(0,0,0,0.8);
+    left: auto;
+    right: 0;
+    top: -100%;
+    margin: 0 auto;
+    align-items: center;
+    max-width: none;
+    text-align: center;
+    z-index: 1;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+  }
+  #site_nav.active {
+    top: 0;
+  }
+  .menu_burger {
+    display: block;
+    font-size: 25px;
+    color: #fff;
+    margin-left: 10px;
+    position: relative;
+    z-index: 1;
+  }
+  .open_menu.active {
+    display: none;
+  }
+  .close_menu.active {
+    display: block;
+  }
+  #menu {
+      width: 80%;
+  }
+/*Main banner start*/
+.main_slide .item.slide_01 {
+  background-image: url(../images/main_mobi_slide_01.jpg);
+}
+.main_slide .item.slide_02 {
+  background-image: url(../images/main_mobi_slide_02.jpg);
+}
+.main_slide .item.slide_03 {
+  background-image: url(../images/main_mobi_slide_03.jpg);
+}
+.main_slide .item.slide_04 {
+  background-image: url(../images/main_mobi_slide_04.jpg);
+}
+
+
+.main_slide .container.banner_txt {
+  padding-top: 25%;
+}
+.banner_head {
+    font-size: 24px;
+    line-height: 35px;
+}
+.banner_head .linebr {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 10px 0;
+  }
+.banner_para {
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.overview_bg {
+  background: url(../images/overview_mobi_bg.jpg) no-repeat center top;
+  background-size: cover;
+}
+#overview-wrp .container {
+  width: 100%;
+}
+
+/*Project highlights style*/
+
+
+/*.highlights_slider .container.banner_txt {
+  justify-content: flex-start;
+  padding-top: 15%;
+  text-align: center;
+  width: 100%;
+}
+.highlights_slider .item.slide_01 {
+  background-image: url(../images/highlights_mobi_slide_01.jpg);  
+}
+.highlights_slider .item.slide_02 {
+  background-image: url(../images/highlights_mobi_slide_02.jpg);  
+}
+.highlights_slider .item.slide_03 {
+  background-image: url(../images/highlights_mobi_slide_03.jpg);  
+}
+.highlights_slider .item.slide_04 {
+  background-image: url(../images/highlights_mobi_slide_04.jpg);  
+}
+.highlights_slider .item.slide_05 {
+  background-image: url(../images/highlights_mobi_slide_05.jpg);  
+}
+.highlights_slider .item.slide_06 {
+  background-image: url(../images/highlights_mobi_slide_06.jpg);  
+}
+.highlights_slider .item.slide_07 {
+  background-image: url(../images/highlights_mobi_slide_07.jpg);  
+}*/
+
+
+/*Project amenities style*/
+.exclusiveamenities_slider .container.banner_txt {
+  justify-content: flex-start;
+  padding-top: 15%;
+  text-align: center;
+  width: 100%;
+}
+.exclusiveamenities_slider .item.slide_01 {
+  background-image: url(../images/exclusiveamenities_mobi_slide_01.jpg);  
+}
+.exclusiveamenities_slider .item.slide_02 {
+  background-image: url(../images/exclusiveamenities_mobi_slide_02.jpg);  
+}
+.exclusiveamenities_slider .item.slide_03 {
+  background-image: url(../images/exclusiveamenities_mobi_slide_03.jpg);  
+}
+.exclusiveamenities_slider .item.slide_04 {
+  background-image: url(../images/exclusiveamenities_mobi_slide_04.jpg);  
+}
+.exclusiveamenities_slider .item.slide_05 {
+  background-image: url(../images/exclusiveamenities_mobi_slide_05.jpg);  
+}
+.exclusiveamenities_slider .item.slide_06 {
+  background-image: url(../images/exclusiveamenities_mobi_slide_06.jpg);  
+}
+
+
+.podiumamenities_slider .container.banner_txt {
+  justify-content: flex-start;
+  padding-top: 15%;
+  text-align: center;
+  width: 100%;
+}
+
+.podiumamenities_slider .item.slide_01 {
+  background-image: url(../images/podiumamenities_mobi_slide_01.jpg);  
+}
+.podiumamenities_slider .item.slide_02 {
+  background-image: url(../images/podiumamenities_mobi_slide_02.jpg);  
+}
+.podiumamenities_slider .item.slide_03 {
+  background-image: url(../images/podiumamenities_mobi_slide_03.jpg);  
+}
+.podiumamenities_slider .item.slide_04 {
+  background-image: url(../images/podiumamenities_mobi_slide_04.jpg);  
+}
+.podiumamenities_slider .item.slide_05 {
+  background-image: url(../images/podiumamenities_mobi_slide_05.jpg);  
+}
+
+
+/*Project image gallery style*/
+  .gallery_slider.owl-theme .owl-nav {
+    right: 12%;
+  }
+/*.gallery_slider .item.slide_01 {
+  background-image: url(../images/gallery_mobi_slide_01.jpg);  
+}
+.gallery_slider .item.slide_02 {
+  background-image: url(../images/gallery_mobi_slide_02.jpg);  
+}
+.gallery_slider .item.slide_03 {
+  background-image: url(../images/gallery_mobi_slide_03.jpg);  
+}
+.gallery_slider .item.slide_04 {
+  background-image: url(../images/gallery_mobi_slide_04.jpg);  
+}
+.gallery_slider .item.slide_05 {
+  background-image: url(../images/gallery_mobi_slide_05.jpg);  
+}
+.gallery_slider .item.slide_06 {
+  background-image: url(../images/gallery_mobi_slide_06.jpg);  
+}*/
+.video_head {
+      font-size: 16px;
+  bottom: 28%;
+  max-width: 400px;
+  width: 90%;
+}
+.video_img_01 {
+  background-image: url(../images/video-mobi-img-01.jpg);
+}
+.video_img_02 {
+  background-image: url(../images/video-mobi-img-02.jpg);
+}
+.slider-counter {
+    font-size: 30px;
+    line-height: 35px;
+    bottom: 15%;
+}
+.slider-counter span:first-child {
+    font-size: 60px;
+    line-height: 65px;
+}
+/************ Locaton style start ***********/
+.locaton_bg {
+  background: url(../images/locaton_mobi_bg.jpg) no-repeat center top;
+  background-size: cover;
+}
+/************ Address and disclaimer style start ***********/
+
+.disc_txt h2 {
+  font-size: 20px;
+  line-height: 21px;
+}
+  /*Enquire now style*/
+#fixed_form_wrap {
+  visibility: hidden;
+  height: 0;
+  background-color: rgba(0,0,0,0.8);
+  -webkit-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+#fixed_form_wrap.active {
+  visibility: visible;
+  height: 100%;
+}
+.form_container {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  flex-direction: column;
+  border-radius: 5px;
+  padding: 10px 0;
+}
+.form_close {
+    display: block;
+    color: #fff;
+    font-size: 30px;
+    position: absolute;
+    top: 0;
+    right: 5px;
+}
+
+#frmContactus {
+    flex-direction: column;
+    width: 90%;
+}
+.fieldwrapper {
+  width: 100%;
+    margin: 10px 10px;
+}
+.fieldwrapper input, .fieldwrapper select {
+  width: 100%;
+}
+
+
+.mobi_form_btn {
+  display: block;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  font-family: 'Champagne-Limousines-Bold';
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  padding: 10px 0;
+  background-color: #56c9f4;
+  color: #000;
+  letter-spacing: 1px;
+}
+}
