@@ -44,10 +44,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     if (count($errors) == 0) {
-        $email_to = "contact@budgetivfmumbai.com";
+        $email_to = "mirzafaizan1931@gmail.com";
 
         $text = "<br />
-            <h3>Contact us Mail From budgetivfmumbai.com</h3>
+            <h3>Contact us Mail From mumbaireality.net.in</h3>
             Name: $name<br />
             Email Id: $email<br />
             Contact Number: $contact<br />
@@ -58,7 +58,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $headers .= "Content-type:text/html; charset=utf-8" . "\r\n";
         $headers .= "From: <$email>" . "\r\n";
 
-        if (mail($email_to, "Contact us Mail From budgetivfmumbai.com", $text, $headers)) {
+        if (mail($email_to, "Contact us Mail From mumbaireality.net.in", $text, $headers)) {
             $success = "Your message has been sent.";
 
             $curl = curl_init();
@@ -70,11 +70,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     'name' => $name,
                     'email' => $email,
                     'contact' => $contact,
-                    'location' => $location,
-                    'message' => $message,
-                    'extra' => 'https://budgetivfmumbai.com/',
-                    'table_alias' => 'budgetivfmumbai_com_',
-                    'api_key' => '16d1323ff8edb6f4910aa3336aa323a1',
+                    // 'location' => $location,
+                    'message' => $location,	
+                    // 'extra' => 'https://budgetivfmumbai.com/',
+                    'table_alias' => 'mumbairealty_in_net_',
+                    'api_key' => '082279cc107842b7ddd66e61a2bbfbc0',
                 ),
             ));
             // Send the request & save response to $resp
@@ -107,15 +107,15 @@ function test_input($data)
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Raheja , Vihar - New Residential Project in Kavesar, Vihar</title>
+	<title>Raheja Ascencio , Vihar - New Residential Project in Kavesar, Vihar</title>
 	<meta name="description"
-		content="Raheja Properties presenting Raheja  with premium residences in Kavesar, Vihar. Perfectly designed homes with amenities like rooftop pool, sky lounge, spa, meditation pavilion and much more offers a comfortable and relaxed experience for each and every member of your family." />
+		content="Raheja Ascencio Properties presenting Raheja Ascencio  with premium residences in Kavesar, Vihar. Perfectly designed homes with amenities like rooftop pool, sky lounge, spa, meditation pavilion and much more offers a comfortable and relaxed experience for each and every member of your family." />
 	<meta name="keywords"
-		content="Raheja , Raheja  Vihar, Raheja  Kavesar,  Raheja  Kavesar Vihar, Raheja Properties Kavesar, Raheja Properties Vihar, Apartments in Kavesar, Flats in Kavesar, Property in Kavesar, Apartments in Kavesar, Projects in Kavesar, Apartments in Vihar, Flats in Vihar, Property in Vihar, Apartments in Vihar, Projects in Vihar" />
+		content="Raheja Ascencio , Raheja Ascencio  Vihar, Raheja Ascencio  Kavesar,  Raheja Ascencio  Kavesar Vihar, Raheja Ascencio Properties Kavesar, Raheja Ascencio Properties Vihar, Apartments in Kavesar, Flats in Kavesar, Property in Kavesar, Apartments in Kavesar, Projects in Kavesar, Apartments in Vihar, Flats in Vihar, Property in Vihar, Apartments in Vihar, Projects in Vihar" />
 
 	<link rel="canonical" href="index.php">
 	<link rel="shortcut icon"
-		href="https://www.Rahejaproperties.com/backoffice/data_content/projects/Raheja__mumbai/landing_page/images/favicon.ico"
+		href="https://www.Raheja Ascencioproperties.com/backoffice/data_content/projects/Raheja Ascencio__mumbai/landing_page/images/favicon.ico"
 		type="image/x-icon">
 	<link rel="stylesheet" href="css/main_style.css">
 	<link rel="stylesheet" href="css/fullpage.min.css">
@@ -124,6 +124,8 @@ function test_input($data)
 	<link rel="stylesheet" href="css/jquery.fancybox.css">
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+
 
 	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
 
@@ -177,9 +179,9 @@ function test_input($data)
 	
 	<header id="site_header">
 		<div class="container">
-			<div class="brand_logo"><a href="index.php"><img src="images/brand_logo.png" alt="" style="    width: 200px;
+			<div class="brand_logo"><a href="index.php"><img src="images/brand_logowhite.png" alt="" style="    width: 200px;
     margin-top: -32px;"></a></div>
-			<div class="project_logo"><a href="index.php"><img src="images/project_logo.png" style="width: 101px;" alt=""></a></div>
+			<div class="project_logo"><a href="index.php"><img src="images/project_logo_white.png" style="width: 101px;" alt=""></a></div>
 			<nav id="site_nav">
 				<ul id="menu">
 					<li><a href="#overview" data-menuanchor="overview">Overview</a></li>
@@ -246,9 +248,8 @@ function test_input($data)
 				<div class="overview_bg"></div>
 				<div class="container">
 					<!-- <p>There’s a world that belongs to everybody. And then, there’s a world that’s designed for you.</p> -->
-					<p>Welcome to Raheja . It’s an address that comes with luxuries that only a few can claim
-						to be theirs. Each of our 3 towers comes with its own world of luxuries, making your world even
-						more exclusive.</p>
+					<p>Raheja Ascencio is the finest evolution of luxury homes at Raheja Vihar. Built by K Raheja Corp one of Mumbai’s most trusted developers, this multi-storeyed tower has 2 and 2 plus residences which are thoughtfully planned to offer its residents the comfort of space & privacy.
+.</p>
 					<p>For you, and only you.</p>
 				</div>
 			</div>
@@ -256,10 +257,10 @@ function test_input($data)
 			<!-- project Podium Amenities start -->
 			<div class="section" id="exclusiveamenities-wrp">
 				<div class="exclusiveamenities_slider owl-carousel owl-theme">
-					<div class="item slide_01" data-dot="<button>Horizon Pool <span></span></button>">
+					<div class="item slide_01" data-dot="<button>KID PLAY AREA <span></span></button>">
 						<div class="container banner_txt">
-							<h2>Horizon Pool for each tower</h2>
-							<p>Melt away your cares of the day as you soak in the rooftop pool</p>
+							<h2>Benefits of owning an Apartment with Kids Play Area</h2>
+							<p>Kids are the future so let them grow with freedom, let them learn on their own,</p>
 						</div>
 					</div>
 					<div class="item slide_02" data-dot="<button>Skyscape Gym <span></span></button>">
@@ -334,14 +335,14 @@ function test_input($data)
 						<a href="https://www.youtube.com/watch?v=ve3lxaJVo9s&amp;feature=youtu.be"
 							data-fancybox="video-galley">
 							<div class="video_img_01"></div>
-							<span class="video_head">Raheja , Vihar | Concept AV</span>
+							<span class="video_head">Raheja Ascencio , Vihar | Concept AV</span>
 						</a>
 					</div>
 					<div class="item">
 						<a href="https://www.youtube.com/watch?v=JE7RZCH6H0A&amp;feature=youtu.be"
 							data-fancybox="video-galley">
 							<div class="video_img_02"></div>
-							<span class="video_head">Raheja , Vihar | Teaser AV</span>
+							<span class="video_head">Raheja Ascencio , Vihar | Teaser AV</span>
 						</a>
 					</div>
 				</div>
@@ -362,19 +363,19 @@ function test_input($data)
 				<div class="container">
 					<div class="disc_txt">
 						<h2>Site Office</h2>
-						<p>Sales Lounge: Raheja , Near Mercedes-Benz Showroom, Ghodbunder Road, Vihar.</p>
+						<p>Sales Lounge: Raheja Ascencio , Near Mercedes-Benz Showroom, Ghodbunder Road, Vihar.</p>
 						<!-- <h2>REGIONAL OFFICE</h2>
-						<p>Unit No. 5C, 5th Floor, Raheja One, Pirojshanagar, Vikhroli East, Mumbai - 400 079.</p> -->
+						<p>Unit No. 5C, 5th Floor, Raheja Ascencio One, Pirojshanagar, Vikhroli East, Mumbai - 400 079.</p> -->
 						<h2>MAHA RERA DETAILS</h2>
-						<p>The project is registered as Raheja  under MahaRERA No. P51700024496, available at
+						<p>The project is registered as Raheja Ascencio  under MahaRERA No. P51700024496, available at
 							http://maharera.mahaonline.gov.in. The project is being developed by Ashank Macbricks
-							Private Limited, a part of Raheja Properties Limited group.</p>
+							Private Limited, a part of Raheja Ascencio Properties Limited group.</p>
 						<h2><span>Disclaimer</span></h2>
 						<p>The Sale is subject to terms of Application Form and Agreement for Sale. All specifications
 							of the unit shall be as per the final agreement between the Parties. Recipients are advised
 							to apprise themselves of the necessary and relevant information of the project prior to
-							making any purchase decisions. The official website of Raheja Properties Ltd. is
-							www.Rahejaproperties.com. Please do not rely on the information provided on any other
+							making any purchase decisions. The official website of Raheja Ascencio Properties Ltd. is
+							www.Raheja Ascencioproperties.com. Please do not rely on the information provided on any other
 							website. *The project comprises of towers with 33 floors which may be increased up to 39
 							floors subject to receipt of necessary approvals. **For select apartments only. ##We do not
 							represent or warrant the continuance of panoramic views for any period of time after the
@@ -387,7 +388,7 @@ function test_input($data)
 							Valid with select banks.</p>
 						<!-- <p>T&C Apply, offer subject to loan eligibility of the customers. Customer will pay 5% of agreement value at the time of booking, then pay Stamp duty registration & other government taxes within 60 days of booking, customer does not have to pay Pre-EMI till March 2021. Next 15% of agreement value has to be paid within 90 days of booking, next 10% of agreement value to be paid within 180 days of booking and the remainder to be paid as per construction linked programme.</p> --><br>
 						<p><strong><a style="color: #fff;"
-									href="https://www.Rahejaproperties.com/pdf/Raheja-Privacy-Policy.pdf"
+									href="https://www.Raheja Ascencioproperties.com/pdf/Raheja Ascencio-Privacy-Policy.pdf"
 									target="_blank">Privacy Policy</a></strong></p>
 					</div>
 				</div>
@@ -414,7 +415,7 @@ function test_input($data)
 			<form id="frmContactus" action="<?php echo htmlspecialchars($_SERVER[' PHP_SELF ']); ?>" name="form1"
 				method="post" class="form">
 				<input type="hidden" name="projid" id="projid" value="a1l2s00000003BMAAY">
-				<input type="hidden" name="prjName" id="prjName" value="Raheja , Mumbai">
+				<input type="hidden" name="prjName" id="prjName" value="Raheja Ascencio , Mumbai">
 				<div class="fieldwrapper">
 					<input name="name" type="text" id="name" placeholder="Full name*" value="<?php 
 					// echo $name; 
