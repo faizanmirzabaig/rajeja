@@ -404,10 +404,9 @@ function test_input($data)
 				</div> -->
 					<div class="container-fluid ">
 						<p class="whyrahejafirst_p">
-							Spacious 2 & 2 Plus Bed Homes starts from
-							<br>
-							<strong style="font-size: 35px;">1.98 Cr* </strong>
-							Onwards
+						<span>	Spacious 2 & 2 Plus Bed Homes starts from </span>
+							
+							<span style="margin-top: 10px;">							<strong style="font-size: 35px;">1.98 Cr* 		Onwards </strong></span>
 						</p>
 						<div class="whyrahejarow">
 							<div class="whyrahejacol1">
@@ -417,7 +416,7 @@ function test_input($data)
 										<a href="#" class="whyrahejaa">30 Acre Township Development of Raheja Vihar in Chandivali .
 										</a>
 									</li>
-									<li class="whyrahejali">
+									<li class="whyrahejali lidis_none">
 										<a href="#" class="whyrahejaa"> Raheja Ascencio – Total Area: 1.76 Acres & Landscaped Area 76% of The Total Plot
 										</a>
 									</li>
