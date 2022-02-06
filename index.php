@@ -187,9 +187,8 @@ function test_input($data)
 	</div>
 	<header id="site_header">
 		<div class="container">
-			<div class="brand_logo"><a href="index.php"><img src="images/brand_logowhite.png" alt="" style="    width: 200px; z-index: 999999999999999999999999999999999;
-    margin-top: -32px;"></a></div>
-			<div class="project_logo"><a href="index.php"><img src="images/project_logo_white.png" style="width: 101px; z-index: 999999999999999999999999999999999;" alt=""></a></div>
+			<div class="brand_logo"><a href="index.php"><img src="images/brand_logowhite.png" alt="" class="menu_logo1"   ></a></div>
+			<div class="project_logo"><a href="index.php"><img src="images/project_logo_white.png" class="menu_logo2" alt=""></a></div>
 			<nav id="site_nav">
 				<ul id="menu">
 					<li><a href="#overview" data-menuanchor="overview">Overview</a></li>
@@ -224,11 +223,7 @@ function test_input($data)
 									<span> Spacious 2 & 2 Plus Bed Homes starts from
 										1.98 Cr* Onwards</span>
 								</span>
-								<!-- <span class="linebr"> -->
-								<!- Spacious 2 & 2 Plus Bed Homes starts from 1.98 Cr* Onwards -->
-									<!-- 2 Bed Premium: &#8377;1.27Cr.+* | 3 Bed Luxe:
-									&#8377;1.69Cr.+*<br>Pay 5% now & relax till March 2022^ -->
-									<!-- </span> -->-
+							
 							</h2>
 							<p class="banner_para">For you, and only you.</p>
 						</div>
@@ -260,7 +255,7 @@ function test_input($data)
 				<div class="overview_bg"></div>
 				<div class="container">
 					<!-- <p>There’s a world that belongs to everybody. And then, there’s a world that’s designed for you.</p> -->
-					<p style="position: relative; z-index: 999999; color: #fff;">Raheja Ascencio is the finest evolution of luxury homes at Raheja Chandivali. Built by K Raheja Corp one of Mumbai’s most trusted developers, this multi-storeyed tower has 2 and 2 plus residences which are thoughtfully planned to offer its residents the comfort of space & privacy.
+					<p class="overview_firstpara" style="position: relative; z-index: 999999; color: #fff;">Raheja Ascencio is the finest evolution of luxury homes at Raheja Chandivali. Built by K Raheja Corp one of Mumbai’s most trusted developers, this multi-storeyed tower has 2 and 2 plus residences which are thoughtfully planned to offer its residents the comfort of space & privacy.
 
 						.</p>
 					<p style="    color: #fff;
@@ -276,7 +271,7 @@ function test_input($data)
 
 						<div class="container banner_txt">
 							<p class="banner_txtpara" style="">Raheja Ascencio has many amenities dedicated exclusively to its residents alone. A contemporary clubhouse is the hub around which many privileges are built. Raheja Ascencio also gives its residents a life amidst nature. The beautiful landscaping too hosts many amenities so that one can enjoy being in the lap of nature.</p>
-							<h2> Nature-Centric Privileges</h2>
+							<h2 class="banner_txt_1"> Nature-Centric Privileges</h2>
 							<ul class="exclusiveamenitiesul">
 								<li class="exclusiveamenitiesulli">
 									<a href="#" class="exclusiveamenitiesula">Mini forest trail</a>

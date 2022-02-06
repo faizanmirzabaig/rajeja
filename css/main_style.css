@@ -534,7 +534,7 @@ p {
   text-transform: none;
   text-shadow: 0 0 2px #000;
   background-color: rgba(0,0,0,0.3);
-  padding: 10px 0 20px;
+  padding: 0px 0 20px;
   max-width: 436px;
   width: 100%;
 }

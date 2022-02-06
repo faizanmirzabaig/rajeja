@@ -1,6 +1,13 @@
 
 
-
+.menu_logo2{
+  width: 88PX; z-index: 999999999999999999999999999999999;
+}
+.menu_logo1{
+  width: 172px;
+  z-index: 999999999999999999999999999999999;
+  MARGIN-TOP: -20PX;
+}
 .banner_txt h2{
     color: white;
     z-index: 9999;
@@ -609,3 +616,68 @@ position: relative;
 
 
 /* location end here */
+
+/* 
+
+
+
+mEDIA qUERY sTART fROME HERE
+
+
+*/
+
+@media(max-width:1216px){
+  .exclusiveamenitiesulli {
+    padding: 0px 15px;
+}
+}
+@media(max-width:1019px){
+  .banner_txt_1{
+
+  }
+  .exclusiveamenitiesul{
+
+  }
+}
+@media(max-width:1019px){
+  .banner_txt{
+    position: relative;
+  }
+}
+
+@media(max-width:992px){
+  .menu_logo1 {
+    width: 172px;
+    MARGIN-TOP: 0PX;
+}
+.overview_firstpara{
+margin-top: 80px;
+}
+}
+
+@media(max-width:556px){
+  .menu_logo2 {
+    width: 73PX;
+  margin-top: 5px;
+
+}
+.menu_logo1 {
+  width: 144px;
+
+}
+.overview_firstpara{
+  margin-top: 45px;
+  }
+}
+@media(max-width:512px){
+  .menu_logo2 {
+    width: 61PX;
+    margin-top: 5px;
+}
+.main_slide .container.banner_txt {
+  padding-top: 36%;
+}
+}
+
+
+/* MEDIA QUERY END HERE */
