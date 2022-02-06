@@ -296,10 +296,10 @@ function test_input($data)
 						<div class="container banner_txt">
 							<p class="banner_txtpara" style="">Raheja Ascencio has many amenities dedicated exclusively to its residents alone. A contemporary clubhouse is the hub around which many privileges are built. Raheja Ascencio also gives its residents a life amidst nature. The beautiful landscaping too hosts many amenities so that one can enjoy being in the lap of nature.</p>
 
-							<h2> Recreational Privileges </h2>
+							<h2 class="banner_txt_1"> Recreational Privileges </h2>
 							<ul class="exclusiveamenitiesul">
 								<li class="exclusiveamenitiesulli">
-									<a href="#" class="exclusiveamenitiesula">Mini Amphitheatre with a party lawn
+									<a href="#" class="exclusiveamenitiesula">Mini Amphitheatre 
 									</a>
 								</li>
 								<li class="exclusiveamenitiesulli">
@@ -321,9 +321,9 @@ function test_input($data)
 					</div>
 					<div class="item slide_03" data-dot="<button>Exclusive Privileges <span></span></button>">
 						<div class="container banner_txt">
-							<p class="banner_txtpara" style="">Raheja Ascencio has many amenities dedicated exclusively to its residents alone. A contemporary clubhouse is the hub around which many privileges are built. Raheja Ascencio also gives its residents a life amidst nature. The beautiful landscaping too hosts many amenities so that one can enjoy being in the lap of nature.</p>
+							<p class="banner_txtpara" >Raheja Ascencio has many amenities dedicated exclusively to its residents alone. A contemporary clubhouse is the hub around which many privileges are built. Raheja Ascencio also gives its residents a life amidst nature. The beautiful landscaping too hosts many amenities so that one can enjoy being in the lap of nature.</p>
 
-							<h2>Exclusive Privileges</h2>
+							<h2 class="banner_txt_1">Exclusive Privileges</h2>
 
 							<ul class="exclusiveamenitiesul">
 								<li class="exclusiveamenitiesulli">

@@ -206,6 +206,10 @@ width: 325px;
   background-color: rgba(0,0,0,0.5);
 }
 /* exclusive amenities */
+.banner_txtpara{
+  position: absolute;
+  top: 9%;
+}
 .exclusiveamenitiesul{
   position: relative; z-index: 99999; color: #fff ; display: flex;
 }
@@ -326,16 +330,7 @@ Gallery end here
   bottom: 79.4%;
 }
 
-@media (min-width: 576px) {
-  .whyraheja {
-    max-width: 540px;
-  }
-}
-@media (min-width: 768px) {
-  .whyraheja {
-    max-width: 720px;
-  }
-}
+
 @media (min-width: 992px) {
   .whyraheja {
     max-width: 960px;
@@ -632,18 +627,25 @@ mEDIA qUERY sTART fROME HERE
 }
 }
 @media(max-width:1019px){
-  .banner_txt_1{
-
-  }
-  .exclusiveamenitiesul{
-
-  }
-}
-@media(max-width:1019px){
   .banner_txt{
     position: relative;
   }
+  .banner_txt_1{
+    position: absolute;
+    bottom: 17%;
+
+  }
+  .exclusiveamenitiesul {
+    position: absolute;
+    bottom: 12%;
 }
+.banner_txtpara {
+  position: absolute;
+  top: 23%;
+}
+  
+}
+
 
 @media(max-width:992px){
   .menu_logo1 {
@@ -653,12 +655,55 @@ mEDIA qUERY sTART fROME HERE
 .overview_firstpara{
 margin-top: 80px;
 }
+#contact-wrp {
+  background-color: #000;
+  padding: 65px 0 100px;
+}
 }
 
-@media(max-width:556px){
+
+@media (min-width: 768px) {
+  /* container */
+  .whyraheja {
+    max-width: 720px;
+  }
+}
+@media (max-width: 684px){
+  .exclusiveamenitiesul {
+  flex-direction: column;
+  }
+  .banner_txt_1 {
+    position: absolute;
+    bottom: 216px;
+}
+.exclusiveamenitiesulli {
+  padding: 0px 32px;
+}
+  }
+
+  @media (min-width: 576px) {
+    .whyraheja {
+      max-width: 540px;
+    }
+   
+  }
+
+ /* container end here */
+
+ 
+
+
+
+
+    @media(max-width:556px){
   .menu_logo2 {
     width: 73PX;
   margin-top: 5px;
+
+}
+.banner_txtpara {
+  position: absolute;
+  top: 127px;
 
 }
 .menu_logo1 {
@@ -668,14 +713,27 @@ margin-top: 80px;
 .overview_firstpara{
   margin-top: 45px;
   }
+  #contact-wrp {
+    background-color: #000;
+    padding: 131px 0 100px;
+
+}
 }
 @media(max-width:512px){
   .menu_logo2 {
     width: 61PX;
     margin-top: 5px;
 }
+.banner_txtpara {
+  position: absolute;
+  top: 118px;
+}
 .main_slide .container.banner_txt {
   padding-top: 36%;
+}
+#contact-wrp {
+  background-color: #000;
+  padding: 110px 0 100px;
 }
 }
 
