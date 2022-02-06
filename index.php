@@ -8,45 +8,45 @@
 $errors = array();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = test_input($_POST["name"]);
-    $contact = test_input($_POST["contact"]);
-    $email = test_input($_POST["email"]);
-    $location = test_input($_POST["location"]);
-    $message = test_input($_POST["message"]);
+	$name = test_input($_POST["name"]);
+	$contact = test_input($_POST["contact"]);
+	$email = test_input($_POST["email"]);
+	$location = test_input($_POST["location"]);
+	$message = test_input($_POST["message"]);
 
-    if (empty($_POST["name"])) {
-        array_push($errors, "please enter your name");
-    } else {
-        $name = test_input($_POST["name"]);
-    }
+	if (empty($_POST["name"])) {
+		array_push($errors, "please enter your name");
+	} else {
+		$name = test_input($_POST["name"]);
+	}
 
-    if (empty($_POST["email"])) {
-        $email = "";
-        // array_push($errors, "please enter your email");
-    } else {
-        $email = test_input($_POST["email"]);
-        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-            array_push($errors, "please enter a valid email Id.");
-        }
-    }
+	if (empty($_POST["email"])) {
+		$email = "";
+		// array_push($errors, "please enter your email");
+	} else {
+		$email = test_input($_POST["email"]);
+		if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+			array_push($errors, "please enter a valid email Id.");
+		}
+	}
 
-    if (empty($_POST["contact"])) {
-        array_push($errors, "please enter your contact number");
-    } else {
-        $contact = test_input($_POST["contact"]);
-    }
+	if (empty($_POST["contact"])) {
+		array_push($errors, "please enter your contact number");
+	} else {
+		$contact = test_input($_POST["contact"]);
+	}
 
-    if (empty($_POST["location"])) {
-        $location = "";
-        // array_push($errors, "please enter your location");
-    } else {
-        $messlocationage = test_input($_POST["location"]);
-    }
+	if (empty($_POST["location"])) {
+		$location = "";
+		// array_push($errors, "please enter your location");
+	} else {
+		$messlocationage = test_input($_POST["location"]);
+	}
 
-    if (count($errors) == 0) {
-        $email_to = "mirzafaizan1931@gmail.com";
+	if (count($errors) == 0) {
+		$email_to = "renuaerealtor@gmail.com";
 
-        $text = "<br />
+		$text = "<br />
             <h3>Contact us Mail From mumbaireality.net.in</h3>
             Name: $name<br />
             Email Id: $email<br />
@@ -54,49 +54,49 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             Location: $location<br />
 			Query: $message";
 
-        $headers = "MIME-Version: 1.0" . "\r\n";
-        $headers .= "Content-type:text/html; charset=utf-8" . "\r\n";
-        $headers .= "From: <$email>" . "\r\n";
+		$headers = "MIME-Version: 1.0" . "\r\n";
+		$headers .= "Content-type:text/html; charset=utf-8" . "\r\n";
+		$headers .= "From: <$email>" . "\r\n";
 
-        if (mail($email_to, "Contact us Mail From mumbaireality.net.in", $text, $headers)) {
-            $success = "Your message has been sent.";
+		if (mail($email_to, "Contact us Mail From mumbaireality.net.in", $text, $headers)) {
+			$success = "Your message has been sent.";
 
-            $curl = curl_init();
-            curl_setopt_array($curl, array(
-                CURLOPT_RETURNTRANSFER => 1,
-                CURLOPT_URL => 'https://sanjarcrm.com/api/leads/submit',
-                CURLOPT_POST => 1,
-                CURLOPT_POSTFIELDS => array(
-                    'name' => $name,
-                    'email' => $email,
-                    'contact' => $contact,
-                    // 'location' => $location,
-                    'message' => $location,	
-                    // 'extra' => 'https://budgetivfmumbai.com/',
-                    'table_alias' => 'mumbairealty_in_net_',
-                    'api_key' => '082279cc107842b7ddd66e61a2bbfbc0',
-                ),
-            ));
-            // Send the request & save response to $resp
-            $resp = curl_exec($curl);
-            // Close request to clear up some resources
-            curl_close($curl);
+			$curl = curl_init();
+			curl_setopt_array($curl, array(
+				CURLOPT_RETURNTRANSFER => 1,
+				CURLOPT_URL => 'https://sanjarcrm.com/api/leads/submit',
+				CURLOPT_POST => 1,
+				CURLOPT_POSTFIELDS => array(
+					'name' => $name,
+					'email' => $email,
+					'contact' => $contact,
+					// 'location' => $location,
+					'message' => $location,
+					// 'extra' => 'https://budgetivfmumbai.com/',
+					'table_alias' => 'mumbairealty_in_net_',
+					'api_key' => '082279cc107842b7ddd66e61a2bbfbc0',
+				),
+			));
+			// Send the request & save response to $resp
+			$resp = curl_exec($curl);
+			// Close request to clear up some resources
+			curl_close($curl);
 
-            // if ($_POST["email"] == "example@gmail.com" && $_POST["location"] == ".") {
-            //echo '<script language="javascript"> window.location.href = "https://api.whatsapp.com/send?phone=919930739143&text=' . $message . '"; </script>';
-            // }
-            $name = $email = $contact = $location = $message = "";
-        } else {
-            array_push($errors, "<strong>Error : </strong> Your message has not been sent !");
-        }
-    }
+			// if ($_POST["email"] == "example@gmail.com" && $_POST["location"] == ".") {
+			//echo '<script language="javascript"> window.location.href = "https://api.whatsapp.com/send?phone=919930739143&text=' . $message . '"; </script>';
+			// }
+			$name = $email = $contact = $location = $message = "";
+		} else {
+			array_push($errors, "<strong>Error : </strong> Your message has not been sent !");
+		}
+	}
 }
 
 function test_input($data)
 {
-    $data = trim($data);
-    $data = stripslashes($data);
-    return $data;
+	$data = trim($data);
+	$data = stripslashes($data);
+	return $data;
 }
 ?>
 
@@ -107,16 +107,12 @@ function test_input($data)
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Raheja Ascencio , Vihar - New Residential Project in Kavesar, Vihar</title>
-	<meta name="description"
-		content="Raheja Ascencio Properties presenting Raheja Ascencio  with premium residences in Kavesar, Vihar. Perfectly designed homes with amenities like rooftop pool, sky lounge, spa, meditation pavilion and much more offers a comfortable and relaxed experience for each and every member of your family." />
-	<meta name="keywords"
-		content="Raheja Ascencio , Raheja Ascencio  Vihar, Raheja Ascencio  Kavesar,  Raheja Ascencio  Kavesar Vihar, Raheja Ascencio Properties Kavesar, Raheja Ascencio Properties Vihar, Apartments in Kavesar, Flats in Kavesar, Property in Kavesar, Apartments in Kavesar, Projects in Kavesar, Apartments in Vihar, Flats in Vihar, Property in Vihar, Apartments in Vihar, Projects in Vihar" />
+	<title>Raheja Ascencio , Chandivali - New Residential Project in Kavesar, Chandivali</title>
+	<meta name="description" content="Raheja Ascencio Properties presenting Raheja Ascencio  with premium residences in Kavesar, Chandivali. Perfectly designed homes with amenities like rooftop pool, sky lounge, spa, meditation pavilion and much more offers a comfortable and relaxed experience for each and every member of your family." />
+	<meta name="keywords" content="Raheja Ascencio , Raheja Ascencio  Chandivali, Raheja Ascencio  Kavesar,  Raheja Ascencio  Kavesar Chandivali, Raheja Ascencio Properties Kavesar, Raheja Ascencio Properties Chandivali, Apartments in Kavesar, Flats in Kavesar, Property in Kavesar, Apartments in Kavesar, Projects in Kavesar, Apartments in Chandivali, Flats in Chandivali, Property in Chandivali, Apartments in Chandivali, Projects in Chandivali" />
 
 	<link rel="canonical" href="index.php">
-	<link rel="shortcut icon"
-		href="https://www.Raheja Ascencioproperties.com/backoffice/data_content/projects/Raheja Ascencio__mumbai/landing_page/images/favicon.ico"
-		type="image/x-icon">
+	<link rel="shortcut icon" href="https://www.Raheja Ascencioproperties.com/backoffice/data_content/projects/Raheja Ascencio__mumbai/landing_page/images/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="css/main_style.css">
 	<link rel="stylesheet" href="css/fullpage.min.css">
 	<link rel="stylesheet" href="css/owl.carousel.min.css">
@@ -172,16 +168,20 @@ function test_input($data)
 	</style>
 
 <body>
-		<!-- <button class="menu-btn" onclick="document.getElementById('menuid').style.display='block'" style="width:auto;">Menu</button> -->
-	<?php 
+	<!-- <button class="menu-btn" onclick="document.getElementById('menuid').style.display='block'" style="width:auto;">Menu</button> -->
+	<?php
 	// include('../menu.php'); 
 	?>
-	
+	<div class="data" id="data">
+		<a href="https://wa.me/+9930205302">
+			<img src="images/whatsapp.svg" alt width="50px">
+		</a>
+	</div>
 	<header id="site_header">
 		<div class="container">
-			<div class="brand_logo"><a href="index.php"><img src="images/brand_logowhite.png" alt="" style="    width: 200px;
+			<div class="brand_logo"><a href="index.php"><img src="images/brand_logowhite.png" alt="" style="    width: 200px; z-index: 999999999999999999999999999999999;
     margin-top: -32px;"></a></div>
-			<div class="project_logo"><a href="index.php"><img src="images/project_logo_white.png" style="width: 101px;" alt=""></a></div>
+			<div class="project_logo"><a href="index.php"><img src="images/project_logo_white.png" style="width: 101px; z-index: 999999999999999999999999999999999;" alt=""></a></div>
 			<nav id="site_nav">
 				<ul id="menu">
 					<li><a href="#overview" data-menuanchor="overview">Overview</a></li>
@@ -205,18 +205,23 @@ function test_input($data)
 			<div class="section active" id="home-wrp">
 				<div class="main_slide owl-carousel">
 					<div class="item slide_02">
-						<div class="container banner_txt">
-							<h2 class="banner_head">
+						<div class="container banner_txt" style="z-index: 999999;">
+							<h2 class="banner_head" style="z-index: 9999999;color: #fff; position: relative;">
 								<span class="greeting"></span>
 								<span style="display: none;" id="clock"></span>
-								<span class="linebr">
-									<span>THERE ARE VERY FEW LUXURIES</span>
+								<span class="linebr" style="z-index: 99999999; color: #fff;">
+									<span style="z-index: 9999999; position: relative; color: #fff;">THERE ARE VERY FEW LUXURIES</span>
 									<span>THAT ARE EXCLUSIVELY YOURS</span>
-									<span>ENJOYING 270&deg; PANORAMIC VIEWS,</span>
-									<span>At DUSK IS ONE OF THEM</span>
+									<span>Launching THE LAST & FINEST TOWER OF RAHEJA Chandivali</span>
+									<span> Spacious 2 & 2 Plus Bed Homes starts from
+										1.98 Cr* Onwards</span>
 								</span>
-								<span class="linebr">2 Bed Premium: &#8377;1.27Cr.+* | 3 Bed Luxe:
-									&#8377;1.69Cr.+*<br>Pay 5% now & relax till March 2022^</span>
+								<!-- <span class="linebr"> -->
+								<!-- Spacious 2 & 2 Plus Bed Homes starts from
+1.98 Cr* Onwards -->
+								<!-- 2 Bed Premium: &#8377;1.27Cr.+* | 3 Bed Luxe:
+									&#8377;1.69Cr.+*<br>Pay 5% now & relax till March 2022^ -->
+								<!-- </span> -->
 							</h2>
 							<p class="banner_para">For you, and only you.</p>
 						</div>
@@ -244,55 +249,115 @@ function test_input($data)
 
 
 			<!-- project overview start -->
-			<div class="section" id="overview-wrp">
+			<div class="section bgsecond" id="overview-wrp">
 				<div class="overview_bg"></div>
 				<div class="container">
 					<!-- <p>There’s a world that belongs to everybody. And then, there’s a world that’s designed for you.</p> -->
-					<p>Raheja Ascencio is the finest evolution of luxury homes at Raheja Vihar. Built by K Raheja Corp one of Mumbai’s most trusted developers, this multi-storeyed tower has 2 and 2 plus residences which are thoughtfully planned to offer its residents the comfort of space & privacy.
-.</p>
-					<p>For you, and only you.</p>
+					<p style="position: relative; z-index: 999999; color: #fff;">Raheja Ascencio is the finest evolution of luxury homes at Raheja Chandivali. Built by K Raheja Corp one of Mumbai’s most trusted developers, this multi-storeyed tower has 2 and 2 plus residences which are thoughtfully planned to offer its residents the comfort of space & privacy.
+
+						.</p>
+					<p style="color:#fff; position: relative; z-index: 9;">Raheja Ascencio has many amenities dedicated exclusively to its residents alone. A contemporary clubhouse is the hub around which many privileges are built. Raheja Ascencio also gives its residents a life amidst nature. The beautiful landscaping too hosts many amenities so that one can enjoy being in the lap of nature.</p>
+					<p style="    color: #fff;
+    position: relative;
+    z-index: 9;">For you, and only you.</p>
 				</div>
 			</div>
 			<!-- project overview end -->
 			<!-- project Podium Amenities start -->
 			<div class="section" id="exclusiveamenities-wrp">
 				<div class="exclusiveamenities_slider owl-carousel owl-theme">
-					<div class="item slide_01" data-dot="<button>KID PLAY AREA <span></span></button>">
+					<div class="item slide_01" data-dot="<button>Nature-Centric Privileges: <span></span></button>">
 						<div class="container banner_txt">
-							<h2>Benefits of owning an Apartment with Kids Play Area</h2>
-							<p>Kids are the future so let them grow with freedom, let them learn on their own,</p>
+							<h2> MINI Forest</h2>
+							<ul class="exclusiveamenitiesul">
+								<li class="exclusiveamenitiesulli">
+									<a href="#" class="exclusiveamenitiesula">Mini forest trail</a>
+								</li>
+								<li class="exclusiveamenitiesulli">
+									<a href="#" class="exclusiveamenitiesula"> Organic garden</a>
+
+								</li>
+								<li class="exclusiveamenitiesulli">
+									<a href="#" class="exclusiveamenitiesula">Stepped garden</a>
+
+								</li>
+
+								<li class="exclusiveamenitiesulli">
+									<a href="#" class="exclusiveamenitiesula"> Garden pavilion with sit-out areas</a>
+								</li>
+
+							</ul>
 						</div>
 					</div>
-					<div class="item slide_02" data-dot="<button>Skyscape Gym <span></span></button>">
+					<div class="item slide_02" data-dot="<button>Recreational Privileges<span></span></button>">
 						<div class="container banner_txt">
-							<h2>Skyscape Gym for each tower</h2>
-							<p>Sweat it out with picturesque views of the Vihar skyline</p>
+							<h2> Gym </h2>
+							<ul class="exclusiveamenitiesul">
+								<li class="exclusiveamenitiesulli">
+									<a href="#" class="exclusiveamenitiesula">Mini Amphitheatre with a party lawn
+									</a>
+								</li>
+								<li class="exclusiveamenitiesulli">
+									<a href="#" class="exclusiveamenitiesula"> Kids play area
+									</a>
+								</li>
+								<li class="exclusiveamenitiesulli">
+									<a href="#" class="exclusiveamenitiesula">Walkway</a>
+
+								</li>
+
+								<li class="exclusiveamenitiesulli">
+									<a href="#" class="exclusiveamenitiesula"> Banquet hall</a>
+								</li>
+
+							</ul>
+
 						</div>
 					</div>
-					<div class="item slide_03" data-dot="<button>Sky Lounge <span></span></button>">
+					<div class="item slide_03" data-dot="<button>Exclusive Privileges <span></span></button>">
 						<div class="container banner_txt">
-							<h2>Sky lounge for each tower</h2>
-							<p>Spend your leisure time with your near and dear ones at the sky lounge</p>
+							<h2>organic garden</h2>
+						
+							<ul class="exclusiveamenitiesul">
+								<li class="exclusiveamenitiesulli">
+									<a href="#" class="exclusiveamenitiesula">Clubhouse
+									</a>
+								</li>
+								<li class="exclusiveamenitiesulli">
+									<a href="#" class="exclusiveamenitiesula"> Squash court
+									</a>
+								</li>
+								<li class="exclusiveamenitiesulli">
+									<a href="#" class="exclusiveamenitiesula">Fitness centre
+</a>
+
+								</li>
+
+								<li class="exclusiveamenitiesulli">
+									<a href="#" class="exclusiveamenitiesula"> Indoor games room</a>
+								</li>
+
+							</ul>
 						</div>
 					</div>
-					<div class="item slide_04" data-dot="<button>Rooftop Jacuzzi & Spa <span></span></button>">
+					<!-- <div class="item slide_04" data-dot="<button>Raheja ascencio Balcony view <span></span></button>">
 						<div class="container banner_txt">
-							<h2>Rooftop Jacuzzi & Spa for each tower</h2>
-							<p>Relax and rejuvenate whenever you want with a rooftop Jacuzzi and spa</p>
+							<h2>Balcony view for each tower</h2>
+							<p>Relax and rejuvenate whenever you want with a Balcony view </p>
 						</div>
-					</div>
-					<div class="item slide_05" data-dot="<button>Dual-lobby System <span></span></button>">
+					</div> -->
+					<!-- <div class="item slide_05" data-dot="<button>Raheja ascencio Dual-lobby System <span></span></button>">
 						<div class="container banner_txt">
 							<h2>Dual-lobby system</h2>
 							<p>Live the exclusive life with just 3 homes per lobby</p>
 						</div>
 					</div>
-					<div class="item slide_06" data-dot="<button>No Shared Walls <span></span></button>">
+					<div class="item slide_06" data-dot="<button>Raheja ascencio No Shared Walls <span></span></button>">
 						<div class="container banner_txt">
 							<h2>No shared walls</h2>
 							<p>Enjoy enhanced privacy with no shared walls between residences</p>
 						</div>
-					</div>
+					</div> -->
 				</div>
 			</div>
 			<!-- project highlights end -->
@@ -329,20 +394,18 @@ function test_input($data)
 			</div>
 			<!-- project Podium Amenities end -->
 			<!-- project Gallery start -->
-			<div class="section" id="gallery-wrp">
+			<div class="section " id="gallery-wrp">
 				<div class="gallery_slider owl-carousel owl-theme">
 					<div class="item">
-						<a href="https://www.youtube.com/watch?v=ve3lxaJVo9s&amp;feature=youtu.be"
-							data-fancybox="video-galley">
+						<a href="https://youtu.be/DdMyG65m3ds" data-fancybox="video-galley">
 							<div class="video_img_01"></div>
-							<span class="video_head">Raheja Ascencio , Vihar | Concept AV</span>
+							<span class="video_head">Raheja Ascencio , Chandivali | Concept </span>
 						</a>
 					</div>
 					<div class="item">
-						<a href="https://www.youtube.com/watch?v=JE7RZCH6H0A&amp;feature=youtu.be"
-							data-fancybox="video-galley">
+						<a href="https://youtu.be/aaY77c5ORZg" data-fancybox="video-galley">
 							<div class="video_img_02"></div>
-							<span class="video_head">Raheja Ascencio , Vihar | Teaser AV</span>
+							<span class="video_head">Raheja Ascencio , Chandivali | Teaser </span>
 						</a>
 					</div>
 				</div>
@@ -350,10 +413,10 @@ function test_input($data)
 			</div>
 			<!-- project Gallery end -->
 			<!-- project Locaton start -->
-			<div class="section" id="locaton-wrp">
+			<div class="section gallerybg" id="locaton-wrp">
 				<div class="locaton_bg"></div>
 				<div class="container">
-					<p class="location_link"><a href="https://goo.gl/maps/nEEcMUBk2LezARqJA" target="_blank">Get
+					<p class="location_link"><a href="https://goo.gl/maps/E2Km5swa2o4tq97VA" target="_blank">Get
 							Direction <i class="fa fa-long-arrow-up" aria-hidden="true"></i></a></p>
 				</div>
 			</div>
@@ -363,33 +426,27 @@ function test_input($data)
 				<div class="container">
 					<div class="disc_txt">
 						<h2>Site Office</h2>
-						<p>Sales Lounge: Raheja Ascencio , Near Mercedes-Benz Showroom, Ghodbunder Road, Vihar.</p>
+						<p>Sales office: Raheja Chandivali, Circular Road, Chandivali, Mumbai - 4OOO72
+							Corporate office: Raheja Towers, Plot no. C-3O, Block G, BKC, Bandra (E), Mumbai — 4OOO51
+							.</p>
 						<!-- <h2>REGIONAL OFFICE</h2>
 						<p>Unit No. 5C, 5th Floor, Raheja Ascencio One, Pirojshanagar, Vikhroli East, Mumbai - 400 079.</p> -->
 						<h2>MAHA RERA DETAILS</h2>
-						<p>The project is registered as Raheja Ascencio  under MahaRERA No. P51700024496, available at
-							http://maharera.mahaonline.gov.in. The project is being developed by Ashank Macbricks
-							Private Limited, a part of Raheja Ascencio Properties Limited group.</p>
+						<p>The project is registered as Raheja Ascencio under MahaRERA No. P518OOO285O6, available at
+							http://maharera.mahaonline.gov.in. The project is being developed by Raheja Corp Homes — One of India’s leading developers.</p>
 						<h2><span>Disclaimer</span></h2>
-						<p>The Sale is subject to terms of Application Form and Agreement for Sale. All specifications
-							of the unit shall be as per the final agreement between the Parties. Recipients are advised
-							to apprise themselves of the necessary and relevant information of the project prior to
-							making any purchase decisions. The official website of Raheja Ascencio Properties Ltd. is
-							www.Raheja Ascencioproperties.com. Please do not rely on the information provided on any other
-							website. *The project comprises of towers with 33 floors which may be increased up to 39
-							floors subject to receipt of necessary approvals. **For select apartments only. ##We do not
-							represent or warrant the continuance of panoramic views for any period of time after the
-							date of publication. #Indicative Agreement Value. Stamp Duty Registration, GST and Other
-							Charges over and above the Agreement Value. PLC & Floor Rise as applicable over and above
-							for all residences. ^T&C Apply. Offer subject to loan eligibility of the customers. To book,
-							customer will pay 5% of agreement value at the time of booking, then pay Stamp duty
-							registration & other government taxes within 60 days of booking, customer does not have to
-							pay Pre-EMI till March 2022. Remainder value to be paid as per construction linked plan.
-							Valid with select banks.</p>
+						<p>Raheja Ascencio head quartered in Mumbai was founded in 1980. Raheja Ascencio (Pvt) Ltd. (RUPL), is headed by Mr. Suresh Raheja & his sons Rahul Raheja & Ashish Raheja
+
+							The Raheja Ascencio (Pvt) Ltd. (RUPL), and its Promoter Group have completed development of over approx. 8.34 million sq. ft. of real estate in the Mumbai Metropolitan Region (MMR) across 53 projects Landmark projects.
+
+							Landmark Residential projects developed by Raheja Ascencio (Pvt) Ltd. (RUPL), such as One Altamount Road, Raheja Anchorage, Raheja Atlantis, Raheja Legend, Raheja Empress, Raheja Sunkist, Raheja Sherwood. Raheja Exotica I & ll , Raheja Acropolis I & ll, Raheja Ridgewood & Raheja Waterfront (Mangalore)
+
+							Raheja Ascencio has completed Landmark Commercial projects such as Raheja Chromium, Raheja Centre-Point. Raheja Plaza. Raheja Titanium and Stanchart Tower
+
+							Developer.
+							Our strive for excellence has won us prestigious awards including Business Super Brand award (thrice) and helped us gain recognition over the years.</p>
 						<!-- <p>T&C Apply, offer subject to loan eligibility of the customers. Customer will pay 5% of agreement value at the time of booking, then pay Stamp duty registration & other government taxes within 60 days of booking, customer does not have to pay Pre-EMI till March 2021. Next 15% of agreement value has to be paid within 90 days of booking, next 10% of agreement value to be paid within 180 days of booking and the remainder to be paid as per construction linked programme.</p> --><br>
-						<p><strong><a style="color: #fff;"
-									href="https://www.Raheja Ascencioproperties.com/pdf/Raheja Ascencio-Privacy-Policy.pdf"
-									target="_blank">Privacy Policy</a></strong></p>
+						<p><strong><a style="color: #fff;" href="https://www.Raheja Ascencioproperties.com/pdf/Raheja Ascencio-Privacy-Policy.pdf" target="_blank">Privacy Policy</a></strong></p>
 					</div>
 				</div>
 			</div>
@@ -398,13 +455,12 @@ function test_input($data)
 	</main>
 	<!-- Enquire now from start -->
 	<script>
-		(function () {
+		(function() {
 			var colombiaPixelURL = 'https://ade.clmbtech.com/cde/eventTracking.htm?pixelId=7209&amp;_w=1&amp;rd=' +
 				new Date().getTime();
 			(new Image()).src = colombiaPixelURL;
 		})();
-	</script><noscript><img height='1' width='1' style='display:none'
-			src='https://ade.clmbtech.com/cde/eventTracking.htm?pixelId=7209&amp;_w=1' /></noscript>
+	</script><noscript><img height='1' width='1' style='display:none' src='https://ade.clmbtech.com/cde/eventTracking.htm?pixelId=7209&amp;_w=1' /></noscript>
 	<script src="js/contact_form_validator.js" type="text/javascript"></script>
 
 
@@ -412,32 +468,27 @@ function test_input($data)
 		<div class="form_container container">
 			<span class="form_close"><i class="fa fa-times" aria-hidden="true"></i></span>
 			<h5 class="site_heading5">Enquire Now</h5>
-			<form id="frmContactus" action="<?php echo htmlspecialchars($_SERVER[' PHP_SELF ']); ?>" name="form1"
-				method="post" class="form">
+			<form id="frmContactus" action="<?php echo htmlspecialchars($_SERVER[' PHP_SELF ']); ?>" name="form1" method="post" class="form">
 				<input type="hidden" name="projid" id="projid" value="a1l2s00000003BMAAY">
 				<input type="hidden" name="prjName" id="prjName" value="Raheja Ascencio , Mumbai">
 				<div class="fieldwrapper">
-					<input name="name" type="text" id="name" placeholder="Full name*" value="<?php 
-					// echo $name; 
-					?>"
-						required>
+					<input name="name" type="text" id="name" placeholder="Full name*" value="<?php
+																								// echo $name; 
+																								?>" required>
 				</div>
 				<div class="fieldwrapper">
 					<input name="email" type="text" id="email" placeholder="e-mail address*" required>
 				</div>
 				<div class="fieldwrapper">
-					<input id="contact" autocomplete="off" name="contact" placeholder="Phone Number*" type="text"
-					
-						required>
+					<input id="contact" autocomplete="off" name="contact" placeholder="Phone Number*" type="text" required>
 				</div>
 				<div class="fieldwrapper">
 					<?php
 					//  include('../country.php');
-					 ?>
+					?>
 				</div>
 				<div class="fieldwrapper">
-					<input id="message" autocomplete="off" name="location" placeholder="Enter Your Comment*" type="text"
-						>
+					<input id="message" autocomplete="off" name="location" placeholder="Enter Your Comment*" type="text">
 				</div>
 				<div class="fieldwrapper form-cta-btn">
 					<input type="submit" name="submit" placeholder="enter your contact" class="btn update_button" value="Submit">
@@ -450,7 +501,7 @@ function test_input($data)
 
 	<?php
 	include('../status.php');
-	 ?>
+	?>
 
 	<script type="text/javascript" src="js/scrolloverflow.js"></script>
 	<script type="text/javascript" src="js/fullpage.min.js"></script>

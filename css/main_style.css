@@ -448,7 +448,7 @@ p {
   background-image: url(../images/main_slide_01.jpg);
 }
 .main_slide .item.slide_02 {
-  background-image: url(../images/main_slide_02.jpg);
+  background-image: url(../images/Raheja\ Ascencio_Balcony\ View.png);
 }
 .main_slide .item.slide_03 {
   background-image: url(../images/main_slide_03.jpg);
@@ -491,8 +491,9 @@ p {
   text-shadow: 0 0 2px #000;
   background-color: rgba(0,0,0,0.3);
   padding: 10px 0;
-  max-width: 380px;
+  max-width: 436px;
   width: 100%;
+  z-index: 999999999999;
 }
 .banner_head .linebr {
   display: block;
@@ -534,7 +535,7 @@ p {
   text-shadow: 0 0 2px #000;
   background-color: rgba(0,0,0,0.3);
   padding: 10px 0 20px;
-  max-width: 380px;
+  max-width: 436px;
   width: 100%;
 }
 #clock {
@@ -709,18 +710,20 @@ opacity: 1;
 }
 
 .exclusiveamenities_slider .item.slide_01 {
-  background-image: url(../images/Raheja\ Ascencio_Project\ elevation.png);  
+  background-image: url(../images/Raheja\ Ascencio_Mini\ Forest\ Trail.png);  
   position: relative;
 }
 
 .exclusiveamenities_slider .item.slide_02 {
-  background-image: url(../images/exclusiveamenities_slide_02.jpg);  
+  background-image: url(../images/gym.png);  
 }
 .exclusiveamenities_slider .item.slide_03 {
-  background-image: url(../images/exclusiveamenities_slide_03.jpg);  
+  background-image: url(../images/Raheja\ Ascencio_organic_garden.png);  
+  position: relative;
 }
 .exclusiveamenities_slider .item.slide_04 {
-  background-image: url(../images/exclusiveamenities_slide_04.jpg);  
+  background-image: url(../images/Raheja\ Ascencio_Balcony\ View.png);  
+  position: relative;
 }
 .exclusiveamenities_slider .item.slide_05 {
   background-image: url(../images/exclusiveamenities_slide_05.jpg);  
@@ -748,7 +751,8 @@ opacity: 1;
   background-image: url(../images/podiumamenities_slide_02.jpg);  
 }
 .podiumamenities_slider .item.slide_03 {
-  background-image: url(../images/podiumamenities_slide_03.jpg);  
+  background-image: url(../images/Raheja\ Ascencio_Project\ kids.png);  
+  position: relative;
 }
 .podiumamenities_slider .item.slide_04 {
   background-image: url(../images/podiumamenities_slide_04.jpg);  
@@ -973,7 +977,7 @@ opacity: 1;
 #locaton-wrp {
 }
 .locaton_bg {
-  background: url(../images/locaton_bg.jpg) no-repeat center top;
+  background: url(../images/raheja_map.png) no-repeat center top;
   background-size: cover;
   width: 100%;
   height: 100%;
@@ -1086,7 +1090,7 @@ opacity: 1;
     border: 1px solid #fff;
     background-color: #fff;
     border-radius: 5px;
-    font-size: 12px;
+    font-size: 16px;
     line-height: 20px;
     letter-spacing: 1px;
     color: #000;

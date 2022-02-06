@@ -13,8 +13,117 @@
     content: '';
     top: 0;
     left: 0;
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100vh;
+  
+  }
+  .exclusiveamenities_slider .item.slide_03::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100vh;
+  
+  }
+  .exclusiveamenities_slider .item.slide_04::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100vh;
+  }
+  
+  
+.exclusiveamenities_slider .item.slide_02::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
     background-color: rgba(0,0,0,0.3);
     width: 100%;
     height: 100vh;
   
   }
+  .podiumamenities_slider .item.slide_03::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100vh;
+  
+  }
+  .gallerybg{
+      position: relative;
+  }
+   .gallerybg::before{
+       position: absolute;
+       content: '';
+       width: 100%;
+       height: 100vh;
+       background: rgba(0, 0, 0, 0.5);
+       z-index: 99;
+   } 
+  #data {
+    width: 70px;
+    height: 70px;
+    position: fixed;
+    bottom: 18%;
+    right: 1.8%;
+    z-index: 9999900;
+}
+.main-content img {
+    max-width: 100%;
+    height: auto;
+}
+#home-wrp{
+  position: relative;
+}
+#home-wrp::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  z-index: 2;
+  background-color: rgba(0,0,0,0.1);
+
+}
+.bgsecond{
+  position: relative;
+}
+.bgsecond::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  z-index: 2;
+  background-color: rgba(0,0,0,0.5);
+}
+.exclusiveamenitiesul{
+  position: relative; z-index: 99999; color: #fff ; display: flex;
+}
+.exclusiveamenitiesulli{
+  list-style: none;
+  position: relative;
+      padding: 0px 20px;
+
+}
+.exclusiveamenitiesulli::before{
+  content: '\2022';
+  font-size: 37px;
+  position: absolute;
+  left: 0px;
+  line-height: 1.3;
+  color: #fff;
+  top: -12px;
+}
+.exclusiveamenitiesula{
+  /* padding: 0px 20px; */
+  text-decoration: none; color: #fff;
+}
