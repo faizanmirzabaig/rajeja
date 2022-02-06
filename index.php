@@ -277,7 +277,7 @@ function test_input($data)
 									<a href="#" class="exclusiveamenitiesula">Mini forest trail</a>
 								</li>
 								<li class="exclusiveamenitiesulli">
-									<a href="#" class="exclusiveamenitiesula"> Organic garden</a>
+									<a href="#" class="exclusiveamenitiesula"> Garden pavilion with sit-out areas</a>
 
 								</li>
 								<li class="exclusiveamenitiesulli">
@@ -286,7 +286,8 @@ function test_input($data)
 								</li>
 
 								<li class="exclusiveamenitiesulli">
-									<a href="#" class="exclusiveamenitiesula"> Garden pavilion with sit-out areas</a>
+								<a href="#" class="exclusiveamenitiesula"> Organic garden</a>
+
 								</li>
 
 							</ul>
@@ -409,7 +410,7 @@ function test_input($data)
 							Onwards
 						</p>
 						<div class="whyrahejarow">
-							<div class="col-md-6">
+							<div class="whyrahejacol1">
 								<h2 class="whyrahejafirtcol_fh2">PROJECT FEATURES</h2>
 								<ul class="whyrahejaul">
 									<li class="whyrahejali">
@@ -439,13 +440,13 @@ function test_input($data)
 
 
 							</div>
-							<div class="col-md-6">
+							<div class="whyrahejacol2">
 								<div class="whyrahejabutton" style="margin-top: -123px;" 
    >
 									<img src="images/phone.png" style="    width: 33px;
 " alt="">
-									<span class="ubtn-data ubtn-text" style="        margin-left: 14px;
-;color: #000;">Call Now +91-993-020-5302 </span>
+									<a href="tel:9930205302" class="ubtn-data ubtn-text" style="        margin-left: 14px;
+;color: #000; text-decoration: none;">Call Now +91-993-020-5302 </a>
 								</div>
 							</div>
 
@@ -491,38 +492,24 @@ function test_input($data)
 						</p>
 					<div class="locationrow">
 						<div class="locationcol1">
-							<img src="images/raheja_map.png" alt="" style="    width: 374px;
+							<img src="images/raheja_map.png" alt="" style="    width: 432px;
     height: 374px;">
 						</div>
 						<div class="locationcol2">
+							<h2 style="color: #fff;">
+								Location
+</h2>
+							<p class="accordionpara">Hiranandani Business Park – 2.7 kms*</p>
+							<p class="accordionpara">Bombay Scottish High School – 2.0 kms*</p>
+							<p class="accordionpara">Pheonix Market City, Kurla – 6.1 kms*</p>
+							<p class="accordionpara">Eastern Express Highway – 5.1 kms*</p>
+							<p class="accordionpara">International Airpot – 5 kms*</p>
+							<p class="accordionpara">Domestic Airport – 6.1 kms*</p>
+							<p class="accordionpara">JVLR (Jogheswari-Vikroli Link Road) – 1.5 kms*</p>
+							<p class="accordionpara">Andheri-Kurla Road – 2.5 kms*</p>
+							<p class="accordionpara">Sakinaka Metro – 2.4 kms*</p>
 
-<div class="fancy-collapse-panel">
-	<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-		<div class="panel panel-default">
-			<div class="panel-heading" role="tab" id="headingOne">
-				<h4 class="panel-title" id="panel-title">
-					Nearby Location
 
-
-				</h4>
-				<span class="icon_span"> <i class="fa fa-arrow-up" aria-hidden="true"
-						id="accord-icon1"></i> </span>
-
-			</div>
-
-			<div id="collapseOne" class="panel-collapse ">
-				<div class="panel-body" id="panel-body">
-					<div class="row">
-						<div class="col-md-12 accordion">
-							
-						  <p class="accordionpara">Hiranandani Business Park  – 2.7 kms*</p>
-						  <p class="accordionpara"> Bombay Scottish High School  – 2.0 kms*</p>
-						  <p class="accordionpara"> Eastern Express Highway  – 5.1 kms*</p>
-						  <p class="accordionpara"> Pheonix Market City, Kurla  – 6.1 kms*
-
-</p>
-<p class="accordionpara"> International Airpot  – 5 kms*
-<p class="accordionpara"> Domestic Airport  – 6.1 kms*
 
 
 						</div>
