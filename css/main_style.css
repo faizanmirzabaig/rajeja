@@ -776,6 +776,7 @@ opacity: 1;
   width: 60%;
   margin: 0 auto;
   text-align: center;
+  position: relative;
 }
 .section.active .exclusiveamenities_slider .container.banner_txt,
 .section.active .podiumamenities_slider .container.banner_txt {
@@ -887,7 +888,7 @@ opacity: 1;
 }*/
 .video_head {
   position: absolute;
-  bottom: 20%;
+  bottom: 31%;
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -901,15 +902,17 @@ opacity: 1;
   border-radius: 5px;
 }
 .video_img_01 {
-  background-image: url(../images/video-img-01.jpg);
+  background-image: url(../images/rahejayoutube.png);
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
+  position: relative;
+  
 }
 .video_img_02 {
-  background-image: url(../images/video-img-02.jpg);
+  background-image: url(../images/Raheja\ Ascencio_Project\ elevation.jpg);
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
@@ -1041,6 +1044,7 @@ opacity: 1;
 .disc_txt p {
   border-bottom: 2px solid #fff;
   margin-bottom: 10px;
+  font-size: 14PX;
 }
 .disc_txt p:last-child {
   border-bottom: none;

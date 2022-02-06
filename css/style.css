@@ -1,3 +1,6 @@
+
+
+
 .banner_txt h2{
     color: white;
     z-index: 9999;
@@ -63,18 +66,108 @@
       position: relative;
   }
    .gallerybg::before{
-       position: absolute;
-       content: '';
-       width: 100%;
-       height: 100vh;
-       background: rgba(0, 0, 0, 0.5);
-       z-index: 99;
+    content: '';
+    position: absolute;
+  
+    background: url(../images/raheja\ location.webp)no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
    } 
+
+   .gallerybg::after{
+    content: '';
+    position: absolute;
+background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100vh;
+   } 
+  
+   .whyrahejabg{
+    position: relative;
+}
+ .whyrahejabg::before{
+  content: '';
+  position: absolute;
+
+  background: url(../images/Raheja\ Ascencio_Project\ elevation.jpg)no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+ } 
+ .container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.7);
+
+  position: relative;
+}
+
+
+ .whyrahejarow{
+  isplay: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    align-items: center;
+    height: 100vh;
+    padding-top: 20px;
+    margin-left: 223px;
+
+ }
+ .whyrahejabutton{
+  width: 350px;
+  min-height: 49px;
+  border-radius: 5px;
+  border-width: 2px;
+  border-color: rgb(255, 255, 255);
+  border-style: solid;
+  background: rgb(16, 84, 158);
+  color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+background-color: rgba(255,255,255,1);
+  z-index: 999;
+border-radius: 5px;
+color: #000;
+font-size: 20px;
+width: 325px;
+  min-height: 70px;
+ }
+ .whyrahejafirtcol_fh2{
+ color:#fff;margin-bottom:10px;
+ position: relative;
+ }
+ .whyrahejafirtcol_fh2::before{
+  content: '';
+    position: absolute;
+    top: 49px;
+    border-style: solid;
+    border-bottom-width: 0px;
+    border-color: rgb(0, 0, 0);
+    width: 341px;
+    margin: 0px auto;
+    left: -7px;
+ }
+   
   #data {
     width: 70px;
     height: 70px;
     position: fixed;
-    bottom: 18%;
+    bottom: 9%;
     right: 1.8%;
     z-index: 9999900;
 }
@@ -105,6 +198,7 @@
   z-index: 2;
   background-color: rgba(0,0,0,0.5);
 }
+/* exclusive amenities */
 .exclusiveamenitiesul{
   position: relative; z-index: 99999; color: #fff ; display: flex;
 }
@@ -123,7 +217,395 @@
   color: #fff;
   top: -12px;
 }
+.whyrahejaa {
+  /* padding: 0px 20px; */
+  text-decoration: none;
+  color: #fff;
+}
+
+/* exclusive amenities end here */
+
+/* 
+
+Gallery started here
+
+*/
+.video_img_01::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  z-index: 2;
+  background-color: rgba(0,0,0,0.5);
+
+}
+.video_img_02::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  z-index: 2;
+  background-color: rgba(0,0,0,0.5);
+
+}
+.video_head{
+  background-color: rgba(255,255,255,1);
+z-index: 999;
+}
+.video_head1 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  color: #000;
+  font-size: 20px;
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+  /* background-color: rgba(255,255,255,0.5); */
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgba(255,255,255,1);
+  z-index: 999;
+  bottom: 58.4%;
+}
+.videoheadimg{
+  position: absolute;
+  bottom: 42%;
+  left: 0px;
+  right: 0;
+  margin: 0 auto;
+  max-width: unset !important;
+  width: unset !important;
+  z-index: 9999;
+    
+}
 .exclusiveamenitiesula{
   /* padding: 0px 20px; */
   text-decoration: none; color: #fff;
 }
+/* 
+
+Gallery end here
+
+*/
+
+/* why raheja start here*/
+
+.whyraheja {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  height: 100vh;
+  margin-left: auto;
+  position: relative;
+}
+.whyrahejafirst_p{
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  color: #000;
+  font-size: 20px;
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+  /* background-color: rgba(255,255,255,0.5); */
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgba(255,255,255,1);
+  z-index: 999;
+  bottom: 79.4%;
+}
+
+@media (min-width: 576px) {
+  .whyraheja {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .whyraheja {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .whyraheja {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .whyraheja {
+    max-width: 1140px;
+  }
+}
+
+.col-md-6 {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.whyrahejaul{
+  position: relative; z-index: 99999; color: #fff ;
+}
+.whyrahejali{
+  list-style: none;
+  position: relative;
+      padding: 0px 20px;
+
+}
+.whyrahejali::before{
+  content: '\2022';
+  font-size: 37px;
+  position: absolute;
+  left: 0px;
+  line-height: 1.3;
+  color: #fff;
+  top: -12px;
+}
+
+/* why raheja end here */
+/* location start here */
+.accordion p{
+  text-align: justify;
+}
+#colorlib-about{
+  padding: 100px 0px;
+
+}
+.abouth3 {
+  color: #000;
+  font-weight: 400;
+  margin: 20px 0 20px 0;
+}
+.about-img {
+  margin-bottom: 0;
+  width: 100%;
+  /* height: 580px; */
+  height: 751px;
+
+}
+.abouth2 {
+  color: #000;
+  font-weight: 400;
+  margin: 0 0 20px 0;
+}
+.col-md-push-1 {
+  left: 5.33333%;
+}
+.panel {
+  margin-bottom: 20px;
+  background-color: #fff;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 1px rgb(0 0 0 / 5%);
+  box-shadow: 0 1px 1px rgb(0 0 0 / 5%);
+}
+.fancy-collapse-panel .panel-default > .panel-heading {
+  padding: 0;
+}
+.panel-default > .panel-heading {
+  color: #333333;
+  background-color: #f5f5f5;
+  border-color: #ddd;
+}
+.panel-group .panel-heading {
+  border-bottom: 0;
+}
+.panel-heading {
+  padding: 10px 15px;
+  border-bottom: 1px solid transparent;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+}
+#headingOne {
+  background-color: rgba(0,0,0,0.9);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 15px 0px 0px;
+}
+.heading___ {
+  background-color: #69cb6a;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  padding: 0px 15px 0px 0px !important;
+}
+.icon_span {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f062";
+  color: white;
+  /* position: absolute; */
+  /* right: 20px; */
+  font-size: 20px;
+  line-height: 1;
+  /* margin-top: 10px; */
+  margin-top: 2px;
+}
+.panel-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+  color: inherit;
+  padding: 16px 25px;
+  display: block;
+  width: 100%;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #fff;
+  position: relative;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  -ms-box-shadow: none !important;
+  -o-box-shadow: none !important;
+  box-shadow: none !important;
+}
+/* .panel-heading a {
+  padding: 15px 25px;
+  display: block;
+  width: 100%;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  background-color: #c90077;
+  color: #fff;
+  position: relative;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  -ms-box-shadow: none !important;
+  -o-box-shadow: none !important;
+  box-shadow: none !important;
+} */
+.collapse.in {
+  display: block;
+}
+.panel-default > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #ddd;
+}
+.panel-body {
+  padding: 1.5em;
+  margin-top: 5px;
+  border: 1px solid #e6e6e6 !important;
+}
+.panel-heading a:after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f062";
+  position: absolute;
+  right: 20px;
+  font-size: 20px;
+  top: 50%;
+  line-height: 1;
+  margin-top: -10px;
+}
+
+.panel-group {
+  /* margin-bottom: 20px; */
+}
+
+.panel-group .panel {
+  margin-bottom: 0;
+  border-radius: 4px;
+}
+
+.locationcontainer {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  height: 100vh;
+  margin-left: auto;
+}
+.locationcol1{
+  -webkit-box-flex: 0;
+    -ms-flex: 0 0 30%;
+    flex: 0 0 39%;
+    max-width: 39%;
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-top: 99px;
+}
+.locationcol2{
+  -webkit-box-flex: 0;
+    -ms-flex: 0 0 70%;
+    flex: 0 0 43%;
+    max-width: 43%;
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-top: 53px;
+
+    
+}
+.accordionpara{
+position: relative;
+}
+.accordionpara::before{
+  content: '\2022';
+  font-size: 37px;
+  position: absolute;
+  left: -21px;
+  line-height: 1.3;
+  color: #000;
+  top: -12px;
+}
+@media (min-width: 576px) {
+  .locationcontainer {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .locationcontainer {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .locationcontainer {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .locationcontainer {
+    max-width: 1140px;
+  }
+}
+.locationrow {
+  display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: 219px;
+    align-items: center;
+    height: 93vh;
+
+}
+.col-md-6 {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+
+/* location end here */

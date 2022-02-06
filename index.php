@@ -172,9 +172,17 @@ function test_input($data)
 	<?php
 	// include('../menu.php'); 
 	?>
+	<div style="    position: fixed;
+    bottom: 24%;
+    right: 3.6%;
+    z-index: 20000;">
+		<a href="tel:9930205302">
+			<img src="images/phone.png" alt="call us" style="width:45px; height:45px">
+		</a>
+	</div>
 	<div class="data" id="data">
 		<a href="https://wa.me/+9930205302">
-			<img src="images/whatsapp.svg" alt width="50px">
+			<img src="images/whatsapp.svg" alt width="45px" style="width: 45px;">
 		</a>
 	</div>
 	<header id="site_header">
@@ -186,7 +194,7 @@ function test_input($data)
 				<ul id="menu">
 					<li><a href="#overview" data-menuanchor="overview">Overview</a></li>
 					<li><a href="#exclusiveamenities" data-menuanchor="exclusiveamenities">Exclusive Amenities</a></li>
-					<li><a href="#podiumamenities" data-menuanchor="podiumamenities">Podium AMENITIES</a></li>
+					<li><a href="#podiumamenities" data-menuanchor="podiumamenities">Why Raheja </a></li>
 					<li><a href="#gallery" data-menuanchor="gallery">GALLERY</a></li>
 					<li><a href="#location" data-menuanchor="location">Location</a></li>
 					<li><a href="#contact" data-menuanchor="contact">Contact Us</a></li>
@@ -217,11 +225,10 @@ function test_input($data)
 										1.98 Cr* Onwards</span>
 								</span>
 								<!-- <span class="linebr"> -->
-								<!-- Spacious 2 & 2 Plus Bed Homes starts from
-1.98 Cr* Onwards -->
-								<!-- 2 Bed Premium: &#8377;1.27Cr.+* | 3 Bed Luxe:
+								<!- Spacious 2 & 2 Plus Bed Homes starts from 1.98 Cr* Onwards -->
+									<!-- 2 Bed Premium: &#8377;1.27Cr.+* | 3 Bed Luxe:
 									&#8377;1.69Cr.+*<br>Pay 5% now & relax till March 2022^ -->
-								<!-- </span> -->
+									<!-- </span> -->-
 							</h2>
 							<p class="banner_para">For you, and only you.</p>
 						</div>
@@ -256,7 +263,6 @@ function test_input($data)
 					<p style="position: relative; z-index: 999999; color: #fff;">Raheja Ascencio is the finest evolution of luxury homes at Raheja Chandivali. Built by K Raheja Corp one of Mumbai’s most trusted developers, this multi-storeyed tower has 2 and 2 plus residences which are thoughtfully planned to offer its residents the comfort of space & privacy.
 
 						.</p>
-					<p style="color:#fff; position: relative; z-index: 9;">Raheja Ascencio has many amenities dedicated exclusively to its residents alone. A contemporary clubhouse is the hub around which many privileges are built. Raheja Ascencio also gives its residents a life amidst nature. The beautiful landscaping too hosts many amenities so that one can enjoy being in the lap of nature.</p>
 					<p style="    color: #fff;
     position: relative;
     z-index: 9;">For you, and only you.</p>
@@ -266,9 +272,11 @@ function test_input($data)
 			<!-- project Podium Amenities start -->
 			<div class="section" id="exclusiveamenities-wrp">
 				<div class="exclusiveamenities_slider owl-carousel owl-theme">
-					<div class="item slide_01" data-dot="<button>Nature-Centric Privileges: <span></span></button>">
+					<div class="item slide_01" data-dot="<button>Nature-Centric Privileges <span></span></button>">
+
 						<div class="container banner_txt">
-							<h2> MINI Forest</h2>
+							<p class="banner_txtpara" style="">Raheja Ascencio has many amenities dedicated exclusively to its residents alone. A contemporary clubhouse is the hub around which many privileges are built. Raheja Ascencio also gives its residents a life amidst nature. The beautiful landscaping too hosts many amenities so that one can enjoy being in the lap of nature.</p>
+							<h2> Nature-Centric Privileges</h2>
 							<ul class="exclusiveamenitiesul">
 								<li class="exclusiveamenitiesulli">
 									<a href="#" class="exclusiveamenitiesula">Mini forest trail</a>
@@ -291,7 +299,9 @@ function test_input($data)
 					</div>
 					<div class="item slide_02" data-dot="<button>Recreational Privileges<span></span></button>">
 						<div class="container banner_txt">
-							<h2> Gym </h2>
+							<p class="banner_txtpara" style="">Raheja Ascencio has many amenities dedicated exclusively to its residents alone. A contemporary clubhouse is the hub around which many privileges are built. Raheja Ascencio also gives its residents a life amidst nature. The beautiful landscaping too hosts many amenities so that one can enjoy being in the lap of nature.</p>
+
+							<h2> Recreational Privileges </h2>
 							<ul class="exclusiveamenitiesul">
 								<li class="exclusiveamenitiesulli">
 									<a href="#" class="exclusiveamenitiesula">Mini Amphitheatre with a party lawn
@@ -316,8 +326,10 @@ function test_input($data)
 					</div>
 					<div class="item slide_03" data-dot="<button>Exclusive Privileges <span></span></button>">
 						<div class="container banner_txt">
-							<h2>organic garden</h2>
-						
+							<p class="banner_txtpara" style="">Raheja Ascencio has many amenities dedicated exclusively to its residents alone. A contemporary clubhouse is the hub around which many privileges are built. Raheja Ascencio also gives its residents a life amidst nature. The beautiful landscaping too hosts many amenities so that one can enjoy being in the lap of nature.</p>
+
+							<h2>Exclusive Privileges</h2>
+
 							<ul class="exclusiveamenitiesul">
 								<li class="exclusiveamenitiesulli">
 									<a href="#" class="exclusiveamenitiesula">Clubhouse
@@ -329,7 +341,7 @@ function test_input($data)
 								</li>
 								<li class="exclusiveamenitiesulli">
 									<a href="#" class="exclusiveamenitiesula">Fitness centre
-</a>
+									</a>
 
 								</li>
 
@@ -363,8 +375,9 @@ function test_input($data)
 			<!-- project highlights end -->
 
 			<!-- project Podium Amenities start -->
-			<div class="section" id="podiumamenities-wrp">
-				<div class="podiumamenities_slider owl-carousel owl-theme">
+			<div class="section gallerybg " id="podiumamenities-wrp">
+				<div class="whyrahejabg">
+					<!-- <div class="podiumamenities_slider owl-carousel owl-theme">
 					<div class="item slide_01" data-dot="<button>Multipurpose Play Court <span></span></button>">
 						<div class="container banner_txt">
 							<h2>Multipurpose Play Court</h2>
@@ -385,11 +398,66 @@ function test_input($data)
 							<h2>Senior Citizen Corner</h2>
 						</div>
 					</div>
-					<div class="item slide_05" data-dot="<button>Meditation Pavilion <span></span></button>">
+					<div class="item slide_05" data-dot=
+					
+					>
 						<div class="container banner_txt">
 							<h2>Meditation Pavilion</h2>
 						</div>
 					</div>
+				</div> -->
+					<div class="container-fluid ">
+						<p class="whyrahejafirst_p">
+							Spacious 2 & 2 Plus Bed Homes starts from
+							<br>
+							<strong style="font-size: 35px;">1.98 Cr* </strong>
+							Onwards
+						</p>
+						<div class="whyrahejarow">
+							<div class="col-md-6">
+								<h2 class="whyrahejafirtcol_fh2">PROJECT FEATURES</h2>
+								<ul class="whyrahejaul">
+									<li class="whyrahejali">
+										<a href="#" class="whyrahejaa">30 Acre Township Development of Raheja Vihar in Chandivali .
+										</a>
+									</li>
+									<li class="whyrahejali">
+										<a href="#" class="whyrahejaa"> Raheja Ascencio – Total Area: 1.76 Acres & Landscaped Area 76% of The Total Plot
+										</a>
+									</li>
+									<li class="whyrahejali">
+										<a href="#" class="whyrahejaa">Spacious 2 and 2 Plus Bed Homes with Lavish Balconies</a>
+
+									</li>
+
+									<li class="whyrahejali">
+										<a href="#" class="whyrahejaa"> Exclusive Clubhouse Dedicated for Ascencio Residents </a>
+									</li>
+									<li class="whyrahejali">
+										<a href="#" class="whyrahejaa"> in Addition, Access to The Raheja Vihar Common Club House </a>
+									</li>
+									<li class="whyrahejali">
+										<a href="#" class="whyrahejaa"> Well Connected to All Necessities. </a>
+									</li>
+
+								</ul>
+
+
+							</div>
+							<div class="col-md-6">
+								<div class="whyrahejabutton" style="margin-top: -123px;" 
+   >
+									<img src="images/phone.png" style="    width: 33px;
+" alt="">
+									<span class="ubtn-data ubtn-text" style="        margin-left: 14px;
+;color: #000;">Call Now +91-993-020-5302 </span>
+								</div>
+							</div>
+
+						</div>
+						
+					</div>
+
 				</div>
 			</div>
 			<!-- project Podium Amenities end -->
@@ -399,12 +467,18 @@ function test_input($data)
 					<div class="item">
 						<a href="https://youtu.be/DdMyG65m3ds" data-fancybox="video-galley">
 							<div class="video_img_01"></div>
+							<span class="video_head1">Site Virtual Tour Video </span>
+
+							<img src="images/youtube.png" alt="" class="videoheadimg">
 							<span class="video_head">Raheja Ascencio , Chandivali | Concept </span>
 						</a>
 					</div>
 					<div class="item">
 						<a href="https://youtu.be/aaY77c5ORZg" data-fancybox="video-galley">
 							<div class="video_img_02"></div>
+							<span class="video_head1">Site Virtual Tour Video </span>
+
+							<img src="images/youtube.png" alt="" class="videoheadimg">
 							<span class="video_head">Raheja Ascencio , Chandivali | Teaser </span>
 						</a>
 					</div>
@@ -414,10 +488,69 @@ function test_input($data)
 			<!-- project Gallery end -->
 			<!-- project Locaton start -->
 			<div class="section gallerybg" id="locaton-wrp">
-				<div class="locaton_bg"></div>
-				<div class="container">
-					<p class="location_link"><a href="https://goo.gl/maps/E2Km5swa2o4tq97VA" target="_blank">Get
-							Direction <i class="fa fa-long-arrow-up" aria-hidden="true"></i></a></p>
+				<!-- <div class="locaton_bg"></div> -->
+				<div class="container-fluid" style="position: relative;">
+				<p class="whyrahejafirst_p">
+				More Reasons to Live in Chandivali. Just in Case Raheja Vihar Itself Wasn’t Enough.
+							
+						</p>
+					<div class="locationrow">
+						<div class="locationcol1">
+							<img src="images/raheja_map.png" alt="" style="    width: 374px;
+    height: 374px;">
+						</div>
+						<div class="locationcol2">
+
+<div class="fancy-collapse-panel">
+	<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+		<div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="headingOne">
+				<h4 class="panel-title" id="panel-title">
+					Nearby Location
+
+
+				</h4>
+				<span class="icon_span"> <i class="fa fa-arrow-up" aria-hidden="true"
+						id="accord-icon1"></i> </span>
+
+			</div>
+
+			<div id="collapseOne" class="panel-collapse ">
+				<div class="panel-body" id="panel-body">
+					<div class="row">
+						<div class="col-md-12 accordion">
+							
+						  <p class="accordionpara">Hiranandani Business Park  – 2.7 kms*</p>
+						  <p class="accordionpara"> Bombay Scottish High School  – 2.0 kms*</p>
+						  <p class="accordionpara"> Eastern Express Highway  – 5.1 kms*</p>
+						  <p class="accordionpara"> Pheonix Market City, Kurla  – 6.1 kms*
+
+</p>
+<p class="accordionpara"> International Airpot  – 5 kms*
+<p class="accordionpara"> Domestic Airport  – 6.1 kms*
+
+
+						</div>
+						<!-- <div class="col-md-6 accordion">
+						 
+						</div> -->
+					</div>
+				</div>
+			</div>
+
+
+
+		</div>
+
+	
+	</div>
+</div>
+
+						</div>
+
+					</div>
+					<!-- <p class="location_link"><a href="https://goo.gl/maps/E2Km5swa2o4tq97VA" target="_blank">Get
+							Direction <i class="fa fa-long-arrow-up" aria-hidden="true"></i></a></p> -->
 				</div>
 			</div>
 			<!-- project Locaton end -->
@@ -508,6 +641,8 @@ function test_input($data)
 	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
 	<script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
 	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript" src="js/custom.js"></script>
+
 
 </body>
 
