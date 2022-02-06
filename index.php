@@ -456,6 +456,7 @@ function test_input($data)
 				</div>
 			</div>
 			<!-- project Podium Amenities end -->
+			<!-- project Podium Amenities end -->
 			<!-- project Gallery start -->
 			<div class="section " id="gallery-wrp">
 				<div class="gallery_slider owl-carousel owl-theme">
@@ -483,22 +484,21 @@ function test_input($data)
 			<!-- project Gallery end -->
 			<!-- project Locaton start -->
 			<div class="section gallerybg" id="locaton-wrp">
-				<!-- <div class="locaton_bg"></div> -->
-				<div class="container-fluid" style="position: relative;">
-				<p class="whyrahejafirst_p">
-				More Reasons to Live in Chandivali. Just in Case Raheja Vihar Itself Wasn’t Enough.
-							
-						</p>
-					<div class="locationrow">
-						<div class="locationcol1">
-							<img src="images/raheja_map.png" alt="" style="    width: 432px;
+			<div class="container-fluid" style="position: relative;">
+			<p class="whyrahejafirst_p">
+			More Reasons to Live in Chandivali. Just in Case Raheja Vihar Itself Wasn’t Enough.
+			
+		</p>
+		<div class="locationrow">
+		<div class="locationcol1">
+		<img src="images/raheja_map.png" alt="" style="    width: 432px;
     height: 374px;">
-						</div>
-						<div class="locationcol2">
-							<h2 style="color: #fff;">
+		</div>
+		<div class="locationcol2">
+		<h2 style="color: #fff;">
 								Location
 </h2>
-							<p class="accordionpara">Hiranandani Business Park – 2.7 kms*</p>
+<p class="accordionpara">Hiranandani Business Park – 2.7 kms*</p>
 							<p class="accordionpara">Bombay Scottish High School – 2.0 kms*</p>
 							<p class="accordionpara">Pheonix Market City, Kurla – 6.1 kms*</p>
 							<p class="accordionpara">Eastern Express Highway – 5.1 kms*</p>
@@ -509,31 +509,17 @@ function test_input($data)
 							<p class="accordionpara">Sakinaka Metro – 2.4 kms*</p>
 
 
-
-
-						</div>
-						<!-- <div class="col-md-6 accordion">
-						 
-						</div> -->
-					</div>
-				</div>
-			</div>
-
-
-
 		</div>
+		</div>
+			</div>
+			</div>
 
 	
-	</div>
-</div>
 
-						</div>
 
-					</div>
 					<!-- <p class="location_link"><a href="https://goo.gl/maps/E2Km5swa2o4tq97VA" target="_blank">Get
 							Direction <i class="fa fa-long-arrow-up" aria-hidden="true"></i></a></p> -->
-				</div>
-			</div>
+
 			<!-- project Locaton end -->
 			<!-- address and disclaimer start -->
 			<div class="section" id="contact-wrp">
@@ -615,9 +601,9 @@ function test_input($data)
 
 	<?php
 	include('../status.php');
-	?>
+	 ?>
 
-	<script type="text/javascript" src="js/scrolloverflow.js"></script>
+<script type="text/javascript" src="js/scrolloverflow.js"></script>
 	<script type="text/javascript" src="js/fullpage.min.js"></script>
 	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
 	<script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
