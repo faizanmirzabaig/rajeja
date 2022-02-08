@@ -170,13 +170,13 @@ width: 325px;
     left: -7px;
  }
    
-  #data {
-    width: 70px;
-    height: 70px;
-    position: fixed;
-    bottom: 9%;
-    right: 1.8%;
-    z-index: 9999900;
+ #data {
+  width: 70px;
+  height: 70px;
+  position: fixed;
+  bottom: 9%;
+  right: 1.3%;
+  z-index: 9999900;
 }
 .main-content img {
     max-width: 100%;
@@ -345,7 +345,7 @@ Gallery end here
   max-width: 400px;
   width: 100%;
   /* background-color: rgba(255,255,255,0.5); */
-  padding: 10px;
+  /* padding: 10px; */
   border-radius: 5px;
   /* background-color: rgba(255,255,255,1); */
   z-index: 999;
@@ -377,7 +377,8 @@ Gallery end here
 }
 .whyrahejaul{
   position: relative; z-index: 99999; color: #fff ;
-  margin-top: 10px;
+  margin-top: 33px;
+
 }
 .whyrahejali{
   list-style: none;
@@ -399,6 +400,10 @@ Gallery end here
 
 /* why raheja end here */
 /* location start here */
+.rahejamap{
+  width: 545px;
+  height: 374px;
+}
 .accordion p{
   text-align: justify;
 }
@@ -653,6 +658,11 @@ mEDIA qUERY sTART fROME HERE
     padding: 0px 15px;
 }
 }
+@media(max-width:1023px){
+  .whyrahejarow {
+    margin-left: 61px;
+}
+}
 @media(max-width:1019px){
   .banner_txt{
     position: relative;
@@ -679,12 +689,53 @@ mEDIA qUERY sTART fROME HERE
     width: 172px;
     MARGIN-TOP: 0PX;
 }
+#data {
+  right: 8px;
+}
+.whyrahejarow{
+  margin-left: 0px;
+
+}
 .overview_firstpara{
 margin-top: 80px;
 }
 #contact-wrp {
   background-color: #000;
   padding: 65px 0 100px;
+}
+.whyrahejacol1{
+  -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-top: 127px;
+    margin-top: 149px;
+
+}
+.whyrahejacol2{
+  -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-top: 53px;
+    margin-top: 83px;
+
+
+}
+
+.whyrahejafirst_p {
+  left: 0px;
+  top: 147px;
 }
 }
 
@@ -696,10 +747,16 @@ margin-top: 80px;
   }
 }
 @media (max-width: 684px){
+  #data {
+    right: -5px;
+}
   .video_head{
     max-width: 336px;
     bottom: 271px;
 
+  }
+  .lidis_none{
+    display: none;
   }
   .video_head1{
     max-width: 336px;
@@ -725,11 +782,50 @@ margin-top: 80px;
 }
   }
 
+  @media(max-width:742px){
+    .locationcol1{
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%;
+      margin-top: 99px;
+    }
+    .locationcol2{
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%;
+      margin-top: 17px;
+      text-align: center;
+  }
+  .rahejamap{
+    width: 361px;
+    height: 196px;
+    margin-top: 100px;
+    margin: auto;
+    display: block;
+    margin-top: 85px;
+  }
+  .accordionpara::before {
+    content: '\2022';
+    font-size: 37px;
+    position: absolute;
+    left: 161px;
+    line-height: 1.3;
+    color: #fff;
+    top: -12px; 
+    display: none;
+}
+.location__para{
+  display: none;
+}
+}
+
   @media (min-width: 576px) {
     .whyraheja {
       max-width: 540px;
     }
-    
+   
    
   }
 
@@ -745,6 +841,10 @@ margin-top: 80px;
     width: 73PX;
   margin-top: 5px;
 
+}
+.whyrahejafirst_p {
+  top: 130px;
+  left: 42px;
 }
 .video_head{
   max-width: 260px;
@@ -795,10 +895,48 @@ margin-top: 80px;
     margin-left: -35px;
 
 }
+#data {
+    right: -13px;
+}
+
+}
+@media(max-width:500px){
+  .whyrahejali::before {
+    content: '\2022';
+    font-size: 37px;
+    position: absolute;
+    left: -21px;
+    line-height: 1.3;
+    color: #fff;
+    top: -12px;
+}
+.whyrahejali {
+  list-style: none;
+  position: relative;
+  padding: 0px 0px;
+  margin-top: 6px;
+}
+.whyrahejabutton {
+  font-size: 17px;
+  width: 279px;
+  margin-left: -7px;
+
+}
+}
+@media(max-width:416px){
+  .whyrahejafirst_p {
+    left: 0px;
+}
+
 }
 @media(max-width:373px){
   .video_head1 {
     max-width: 260px;
+}
+.whyrahejabutton {
+  font-size: 15px;
+  width: 252px;
+  margin-left: -7px;
 }
 .video_head {
   max-width: 200px;

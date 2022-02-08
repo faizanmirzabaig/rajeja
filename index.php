@@ -13,13 +13,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	$email = test_input($_POST["email"]);
 	$location = test_input($_POST["location"]);
 	$message = test_input($_POST["message"]);
-
+	
 	if (empty($_POST["name"])) {
 		array_push($errors, "please enter your name");
 	} else {
 		$name = test_input($_POST["name"]);
 	}
-
+	
 	if (empty($_POST["email"])) {
 		$email = "";
 		// array_push($errors, "please enter your email");
@@ -35,17 +35,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	} else {
 		$contact = test_input($_POST["contact"]);
 	}
-
+	
 	if (empty($_POST["location"])) {
 		$location = "";
 		// array_push($errors, "please enter your location");
 	} else {
 		$messlocationage = test_input($_POST["location"]);
 	}
-
+	
 	if (count($errors) == 0) {
-		$email_to = "renuaerealtor@gmail.com";
-
+		$email_to = "mirzafaizan1931@gmail.com";
+		
 		$text = "<br />
             <h3>Contact us Mail From mumbaireality.net.in</h3>
             Name: $name<br />
@@ -53,19 +53,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             Contact Number: $contact<br />
             Location: $location<br />
 			Query: $message";
-
-		$headers = "MIME-Version: 1.0" . "\r\n";
-		$headers .= "Content-type:text/html; charset=utf-8" . "\r\n";
-		$headers .= "From: <$email>" . "\r\n";
-
-		if (mail($email_to, "Contact us Mail From mumbaireality.net.in", $text, $headers)) {
-			$success = "Your message has been sent.";
-
-			$curl = curl_init();
-			curl_setopt_array($curl, array(
-				CURLOPT_RETURNTRANSFER => 1,
-				CURLOPT_URL => 'https://sanjarcrm.com/api/leads/submit',
-				CURLOPT_POST => 1,
+			
+			$headers = "MIME-Version: 1.0" . "\r\n";
+			$headers .= "Content-type:text/html; charset=utf-8" . "\r\n";
+			$headers .= "From: <$email>" . "\r\n";
+			
+			if (mail($email_to, "Contact us Mail From mumbaireality.net.in", $text, $headers)) {
+				$success = "Your message has been sent.";
+				
+				$curl = curl_init();
+				curl_setopt_array($curl, array(
+					CURLOPT_RETURNTRANSFER => 1,
+					CURLOPT_URL => 'https://sanjarcrm.com/api/leads/submit',
+					CURLOPT_POST => 1,
 				CURLOPT_POSTFIELDS => array(
 					'name' => $name,
 					'email' => $email,
@@ -81,14 +81,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 			$resp = curl_exec($curl);
 			// Close request to clear up some resources
 			curl_close($curl);
-
+			
 			// if ($_POST["email"] == "example@gmail.com" && $_POST["location"] == ".") {
-			//echo '<script language="javascript"> window.location.href = "https://api.whatsapp.com/send?phone=919930739143&text=' . $message . '"; </script>';
+				//echo '<script language="javascript"> window.location.href = "https://api.whatsapp.com/send?phone=919930739143&text=' . $message . '"; </script>';
 			// }
 			$name = $email = $contact = $location = $message = "";
 		} else {
 			array_push($errors, "<strong>Error : </strong> Your message has not been sent !");
 		}
+		echo ('i am here');
 	}
 }
 
@@ -456,7 +457,6 @@ function test_input($data)
 				</div>
 			</div>
 			<!-- project Podium Amenities end -->
-			<!-- project Podium Amenities end -->
 			<!-- project Gallery start -->
 			<div class="section " id="gallery-wrp">
 				<div class="gallery_slider owl-carousel owl-theme">
@@ -484,42 +484,56 @@ function test_input($data)
 			<!-- project Gallery end -->
 			<!-- project Locaton start -->
 			<div class="section gallerybg" id="locaton-wrp">
-			<div class="container-fluid" style="position: relative;">
-			<p class="whyrahejafirst_p">
-			More Reasons to Live in Chandivali. Just in Case Raheja Vihar Itself Wasn’t Enough.
-			
-		</p>
-		<div class="locationrow">
-		<div class="locationcol1">
-		<img src="images/raheja_map.png" alt="" style="    width: 432px;
-    height: 374px;">
-		</div>
-		<div class="locationcol2">
-		<h2 style="color: #fff;">
+				<!-- <div class="locaton_bg"></div> -->
+				<div class="container-fluid" style="position: relative;">
+				<p class="whyrahejafirst_p">
+				More Reasons to Live in Chandivali. Just in Case Raheja Vihar Itself Wasn’t Enough.
+							
+						</p>
+					<div class="whyrahejarow">
+						<div class="locationcol1">
+							<img src="images/raheja_map.png" alt="" class="rahejamap"  >
+						</div>
+						<div class="locationcol2">
+							<h2 style="color: #fff;">
 								Location
 </h2>
-<p class="accordionpara">Hiranandani Business Park – 2.7 kms*</p>
+							<p class="accordionpara">Hiranandani Business Park – 2.7 kms*</p>
 							<p class="accordionpara">Bombay Scottish High School – 2.0 kms*</p>
 							<p class="accordionpara">Pheonix Market City, Kurla – 6.1 kms*</p>
 							<p class="accordionpara">Eastern Express Highway – 5.1 kms*</p>
 							<p class="accordionpara">International Airpot – 5 kms*</p>
 							<p class="accordionpara">Domestic Airport – 6.1 kms*</p>
-							<p class="accordionpara">JVLR (Jogheswari-Vikroli Link Road) – 1.5 kms*</p>
-							<p class="accordionpara">Andheri-Kurla Road – 2.5 kms*</p>
-							<p class="accordionpara">Sakinaka Metro – 2.4 kms*</p>
+							<p class="accordionpara location__para">JVLR (Jogheswari-Vikroli Link Road) – 1.5 kms*</p>
+							<p class="accordionpara location__para">Andheri-Kurla Road – 2.5 kms*</p>
+							<p class="accordionpara location__para">Sakinaka Metro – 2.4 kms*</p>
 
 
-		</div>
-		</div>
+
+
+						</div>
+						<!-- <div class="col-md-6 accordion">
+						 
+						</div> -->
+					</div>
+				</div>
 			</div>
-			</div>
+
+
+
+		<!-- </div> -->
 
 	
+	<!-- </div> -->
+<!-- </div> -->
 
+						<!-- </div> -->
 
+					<!-- </div> -->
 					<!-- <p class="location_link"><a href="https://goo.gl/maps/E2Km5swa2o4tq97VA" target="_blank">Get
 							Direction <i class="fa fa-long-arrow-up" aria-hidden="true"></i></a></p> -->
-
+				<!-- </div> -->
+			<!-- </div> -->
 			<!-- project Locaton end -->
 			<!-- address and disclaimer start -->
 			<div class="section" id="contact-wrp">
@@ -601,9 +615,9 @@ function test_input($data)
 
 	<?php
 	include('../status.php');
-	 ?>
+	?>
 
-<script type="text/javascript" src="js/scrolloverflow.js"></script>
+	<script type="text/javascript" src="js/scrolloverflow.js"></script>
 	<script type="text/javascript" src="js/fullpage.min.js"></script>
 	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
 	<script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
