@@ -5,7 +5,6 @@
 <?php
 
 // $name = $email = $contact = $location = $message = "";
-$errors = array();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	$name = test_input($_POST["name"]);
@@ -29,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 			array_push($errors, "please enter a valid email Id.");
 		}
 	}
-
+	
 	if (empty($_POST["contact"])) {
 		array_push($errors, "please enter your contact number");
 	} else {
@@ -45,6 +44,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	
 	if (count($errors) == 0) {
 		$email_to = "mirzafaizan1931@gmail.com";
+		echo ('asdasd');
 		
 		$text = "<br />
             <h3>Contact us Mail From mumbaireality.net.in</h3>
@@ -89,7 +89,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		} else {
 			array_push($errors, "<strong>Error : </strong> Your message has not been sent !");
 		}
-		echo ('i am here');
 	}
 }
 
